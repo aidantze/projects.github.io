@@ -7,7 +7,7 @@ https://aidantze.github.io/
 I will list all projects, and provide a brief description for each, below (sorted by most recent):
 Last updated: 1/6/24
 
-## comp9321
+## comp9321 - Data Services Engineering
 
 ### ass3 - Machine Learning
 This machine learning assignment does 2 things:
@@ -28,9 +28,27 @@ This Data Service stores all data in an SQLite database, querying when necessary
 Extracts data from a csv file, stores such info in python dataframes, cleans and manipulates data according to a set of criteria, and visualises the data according to most relevant and informative attributes. 
 
 
-## comp3411
+## comp3411 - Artificial Intelligence
 
-### ass2 - 
+### ass2 - Search Algorithms Report
+Report which analyses different search algorithms, including heuristic path search evaluation and alpha-beta pruning for 2-player game simulation.
 
-### ass1 - 
+### ass1 - Constraint Satisfaction Agent
+Uses constraint satisfaction to play a modified game of Hashiwokakero: placement of bridges between adjacent islands which must satisfy the number on the island. The algorithm uses forward checking and combinatorics to try all possible combinations of bridge placements at any given island before moving to the next island, and checks if all constraints are satisfied before terminating. 
+
+
+## fins3646 - Toolkit for Finance
+
+### project2 - Event Study
+*Group Project*
+A project that performed some introductory data manipulation using pandas, before using the data to analyse whether total volatility has any effect on a long-short portfolio consisting of top-performing NYSE stocks. The event study was deliberately made unclear for us to figure out the null hypothesis for ourselves. 
+
+
+## comp2511 - Object-Oriented Design and Programming
+
+### assignment-i - Satellite Simulation
+
+
+### assignment-ii - Dungeon-crawler game
+
 
