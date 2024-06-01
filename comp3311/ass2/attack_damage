@@ -1,0 +1,311 @@
+#! /usr/bin/env python3
+
+
+"""
+COMP3311
+23T1
+Assignment 2
+Pokemon Database
+
+Written by: Aidan Tan (z5360925)
+Written on: 
+	Start: 13/4/23
+	End: 14/4/23
+
+Attack Damage
+
+Given the name of an attacking, and a defending pokemon along with the name of a game in the Pokemon series,
+display a list, ordered from lowest to highest damage,
+of all the moves the attacking pokemon could use on the defending pokemon in the given game.
+"""
+
+
+import sys
+import psycopg2
+import helpers
+import math
+
+
+### Constants
+USAGE = f"Usage: {sys.argv[0]} <Attacking Pokemon Name> <Defending Pokemon Name> <Pokemon Game Name>"
+
+
+### Globals
+db = None
+Attacking_Pokemon_Name = None
+Defending_Pokemon_Name = None
+Pokemon_Game_Name      = None
+
+
+### Command-line args
+if len(sys.argv) != 4:
+	print(USAGE, file=sys.stderr)
+	sys.exit(1)
+Attacking_Pokemon_Name = helpers.clean(sys.argv[1])
+Defending_Pokemon_Name = helpers.clean(sys.argv[2])
+Pokemon_Game_Name      = helpers.clean(sys.argv[3])
+
+
+def main():
+	cur = db.cursor()
+	
+	# error checking
+	attackVerifyQuery = "select name from pokemon where name = %s;"
+	data = [Attacking_Pokemon_Name]
+	cur.execute(attackVerifyQuery, data)
+	attackVerifyOutput = cur.fetchone()
+	if attackVerifyOutput == None:
+		print(f"'{Attacking_Pokemon_Name}' isn't a Pokemon that exists.", file=sys.stderr)
+		exit(1)
+	
+	defendVerifyQuery = "select name from pokemon where name = %s;"
+	data = [Defending_Pokemon_Name]
+	cur.execute(defendVerifyQuery, data)
+	defendVerifyOutput = cur.fetchone()
+	if defendVerifyOutput == None:
+		print(f"'{Defending_Pokemon_Name}' isn't a Pokemon that exists.", file=sys.stderr)
+		exit(1)
+
+	gameVerifyQuery = "select name from games where name = %s;"
+	data = [Pokemon_Game_Name]
+	cur.execute(gameVerifyQuery, data)
+	gameVerifyOutput = cur.fetchone()
+	if gameVerifyOutput == None:
+		print(f"'Pokemon {Pokemon_Game_Name}' isn't a game in the Pokemon series.", file=sys.stderr)
+		exit(1)
+	
+	attackGameVerifyQuery = """select g.name 
+	from games g 
+	join pokedex x on g.id = x.game
+	join pokemon p on x.national_id = p.id 
+	where g.name = %s
+	and p.name = %s
+	;
+	"""
+	data = [Pokemon_Game_Name, Attacking_Pokemon_Name]
+	cur.execute(attackGameVerifyQuery, data)
+	attackGameVerifyOutput = cur.fetchone()
+	if attackGameVerifyOutput == None:
+		print(f"'{Attacking_Pokemon_Name}' doesn't appear in 'Pokemon {Pokemon_Game_Name}'.", file=sys.stderr)
+		exit(1)
+
+	defendGameVerifyQuery = """select g.name 
+	from games g 
+	join pokedex x on g.id = x.game
+	join pokemon p on x.national_id = p.id 
+	where g.name = %s
+	and p.name = %s
+	;
+	"""
+	data = [Pokemon_Game_Name, Defending_Pokemon_Name]
+	cur.execute(defendGameVerifyQuery, data)
+	defendGameVerifyOutput = cur.fetchone()
+	if defendGameVerifyOutput == None:
+		print(f"'{Defending_Pokemon_Name}' doesn't appear in 'Pokemon {Pokemon_Game_Name}'.", file=sys.stderr)
+		exit(1)
+
+	# Get attacking pokemon's moves
+	movesQuery = """select distinct
+		m.name, 
+		m.of_type,
+		m.category,
+		m.power
+	from moves m
+	join learnable_moves l on m.id = l.learns
+	join pokemon p on l.learnt_by = p.id
+	join games g on l.learnt_in = g.id
+	where p.name = %s
+	and g.name = %s
+	order by 1
+	;
+	"""
+	data = [Attacking_Pokemon_Name, Pokemon_Game_Name]
+	cur.execute(movesQuery, data)
+	moveOutput = cur.fetchall()
+
+	# attacking pokemon's stats -> attack, types
+	attackStatsQuery = """select
+		base_stats
+	from pokemon
+	where name = %s
+	;
+	"""
+	data = [Attacking_Pokemon_Name]
+	cur.execute(attackStatsQuery, data)
+	attackStatsOutput = cur.fetchone()	# only one to fetch
+	attackStats = eval(attackStatsOutput[0])
+
+	# defending pokemon's stats -> defend, types
+	defendStatsQuery = """select
+		base_stats
+	from pokemon
+	where name = %s
+	;
+	"""
+	data = [Defending_Pokemon_Name]
+	cur.execute(defendStatsQuery, data)
+	defendStatsOutput = cur.fetchone()	# only one to fetch
+	defendStats = eval(defendStatsOutput[0])
+
+	superEffective = []	# store battle stats for sorting and printing
+	for i in moveOutput:
+		moveName, moveType, moveCategory, attackPower = i
+		if attackPower is None:
+			continue
+
+		# Unpack stats
+		if moveCategory == "Special":
+			attackerAttack = attackStats[3]
+			defenderDefence = defendStats[4]
+		else:
+			attackerAttack = attackStats[1]
+			defenderDefence = defendStats[2]
+
+		attackTypeQuery1 = """select t.id
+		from types t
+		join pokemon p on t.id = p.first_type
+		where p.name = %s
+		;
+		"""
+		data = [Attacking_Pokemon_Name]
+		cur.execute(attackTypeQuery1, data)
+		attackTypeTuple1 = cur.fetchone()
+		attackFirstType = attackTypeTuple1[0]
+
+		attackTypeQuery2 = """select t.id
+		from types t
+		join pokemon p on t.id = p.second_type
+		where p.name = %s
+		;
+		"""
+		data = [Attacking_Pokemon_Name]
+		cur.execute(attackTypeQuery2, data)
+		attackTypeTuple2 = cur.fetchone()
+		if attackTypeTuple2 is None:
+			attackSecondType = -1
+		else:
+			attackSecondType = attackTypeTuple2[0]
+
+		defendTypeQuery1 = """select t.id
+		from types t
+		join pokemon p on t.id = p.first_type
+		where p.name = %s
+		;
+		"""
+		data = [Defending_Pokemon_Name]
+		cur.execute(defendTypeQuery1, data)
+		defendTypeTuple1 = cur.fetchone()
+		defendFirstType = defendTypeTuple1[0]
+
+		defendTypeQuery2 = """select t.id
+		from types t
+		join pokemon p on t.id = p.second_type
+		where p.name = %s
+		;
+		"""
+		data = [Defending_Pokemon_Name]
+		cur.execute(defendTypeQuery2, data)
+		defendTypeTuple2 = cur.fetchone()
+		if defendTypeTuple2 is None:
+			defendSecondType = -1
+		else:
+			defendSecondType = defendTypeTuple2[0]
+
+		# Get STAB
+		if attackFirstType == moveType or attackSecondType == moveType:
+			STAB = 1.5
+		else:
+			STAB = 1.0
+
+		# Get type effectiveness multiplier, move dependent
+		multiplier = 1.0
+		effectiveTypeQuery1 = """select
+			te.multiplier
+		from type_effectiveness te
+		join types t on te.attacking = t.id
+		join types u on te.defending = u.id
+		where t.id = %s
+		and u.id = %s
+		;
+		"""
+		data = [moveType, defendFirstType]
+		cur.execute(effectiveTypeQuery1, data)
+		effectiveTypeTuple1 = cur.fetchone()
+		if not effectiveTypeTuple1 is None:
+			multiplier *= effectiveTypeTuple1[0] / 100
+
+		effectiveTypeQuery2 = """select
+			te.multiplier
+		from type_effectiveness te
+		join types t on te.attacking = t.id
+		join types u on te.defending = u.id
+		where t.id = %s
+		and u.id = %s
+		;
+		"""
+		data = [moveType, defendSecondType]
+		cur.execute(effectiveTypeQuery2, data)
+		effectiveTypeTuple2 = cur.fetchone()
+		if not effectiveTypeTuple2 is None:		# will be none if no second type
+			multiplier *= effectiveTypeTuple2[0] / 100
+
+		# Set attack-level and random-factor, calculate min damage
+		attackLevel = 1.0
+		randomFactor = 0.85
+		minDamage = ((((((2 * attackLevel) / 5) + 2) * attackPower * (attackerAttack / defenderDefence)) / 50) + 2) * randomFactor * STAB * multiplier
+
+		# Set attack-level and random-factor, calculate max damage
+		attackLevel = 100.0
+		randomFactor = 1.00
+		maxDamage = ((((((2 * attackLevel) / 5) + 2) * attackPower * (attackerAttack / defenderDefence)) / 50) + 2) * randomFactor * STAB * multiplier
+
+		if math.trunc(round(minDamage, 1)) <= 0 or math.trunc(round(maxDamage, 1)) <= 0:
+			continue
+
+		# Update list
+		superEffective.append({
+			"moveType": moveType,
+			"attackType": str(attackFirstType) + ' + ' + str(attackSecondType),
+			"defendType": str(defendFirstType) + ' + ' + str(defendSecondType),
+			"category": moveCategory,
+			"power": attackPower,
+			"attack": attackerAttack,
+			"defend": defenderDefence,
+			"STAB": STAB,
+			"multiplier": multiplier,
+			"move": moveName,
+			"minDamage": math.trunc(round(minDamage, 1)),
+			"maxDamage": math.trunc(round(maxDamage, 1)),
+		})
+
+	# Sort and print output
+	if superEffective == []:
+		print(f"\nIn 'Pokemon {Pokemon_Game_Name}', '{Attacking_Pokemon_Name}' can't attack '{Defending_Pokemon_Name}'.")
+	else:
+		print(f"\nIn 'Pokemon {Pokemon_Game_Name}', When '{Attacking_Pokemon_Name}' attacks '{Defending_Pokemon_Name}', '{Attacking_Pokemon_Name}' can use the following moves:\n")
+
+		superEffective = sorted(superEffective, key=lambda d: d['move'])
+		superEffective = sorted(superEffective, key=lambda d: d['minDamage'])
+		superEffective = sorted(superEffective, key=lambda d: d['maxDamage'])
+
+		# determine no. of characters to right-align numeric values
+		minAlign = len(str(superEffective[-1]['minDamage']))
+		maxAlign = len(str(superEffective[-1]['maxDamage']))
+
+		for i in superEffective:
+			print(f"\t'{i['move']}'\tfor a minimum of {str(i['minDamage']).rjust(minAlign)} damage and a maximum of {str(i['maxDamage']).rjust(maxAlign)} damage to '{Defending_Pokemon_Name}'.")
+		print()
+
+if __name__ == '__main__':
+	try:
+		db = psycopg2.connect(dbname="ass2")
+		main()
+	except psycopg2.Error as err:
+		print("DB error: ", err)
+	except Exception as err:
+		print("Internal Error: ", err)
+		raise err
+	finally:
+		if db is not None:
+			db.close()
+	sys.exit(0)

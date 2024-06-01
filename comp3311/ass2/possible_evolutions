@@ -1,0 +1,173 @@
+#! /usr/bin/env python3
+
+
+"""
+COMP3311
+23T1
+Assignment 2
+Pokemon Database
+
+Written by: Aidan Tan (z5360925)
+Written on: 
+	Start: 12/4/23
+	End: 14/4/23
+
+Possible Evolutions
+
+Given the name of a pokemon,
+display a list of all the pokemon that could evolve into the given pokemon,
+and a list of all the pokemon that the given pokemon could evolve into.
+"""
+
+
+import sys
+import psycopg2
+import helpers
+
+
+### Constants
+USAGE = f"Usage: {sys.argv[0]} <Pokemon Name>"
+
+
+### Globals
+db = None
+Pokemon_Name = None
+
+
+### Command-line args
+if len(sys.argv) != 2:
+	print(USAGE, file=sys.stderr)
+	sys.exit(1)
+Pokemon_Name = helpers.clean(sys.argv[1])
+
+
+def main():
+	cur = db.cursor()
+	
+	# Error check
+	pokemonVerifyQuery = "select id from pokemon where name = %s;"
+	data = [Pokemon_Name]
+	cur.execute(pokemonVerifyQuery, data)
+	pokemonVerifyOutput = cur.fetchone()	# only one pokemon to fetch
+	if pokemonVerifyOutput is None:
+		print(f"'{Pokemon_Name}' isn't a Pokemon that exists.", file=sys.stderr)
+		exit(1)
+	pid = pokemonVerifyOutput[0]
+
+	# Find all pokemon that evolve into the given pokemon
+	preEvolveQuery = """select distinct
+		e.pre_evolution,
+		p.name
+	from evolutions e
+	join pokemon p on e.pre_evolution = p.id
+	where e.post_evolution = cast(%s as pokemon_id)
+	order by 1
+	;
+	"""
+	data = [pid]
+	cur.execute(preEvolveQuery, data)
+	preEvolveList = cur.fetchall()
+	if preEvolveList == []:
+		print(f"\n'{Pokemon_Name}' doesn't have any pre-evolutions.\n")
+	else:
+		print(f"\n'{Pokemon_Name}' can evolve from:")
+		
+		# Evolution requirements
+		for i in preEvolveList:
+			evolvePid, evolveName = i
+
+			requireQuery = """select distinct
+				e.id,
+				r.id,
+				er.inverted,
+				r.assertion
+			from evolution_requirements er
+			join requirements r on er.requirement = r.id
+			join evolutions e on er.evolution = e.id
+			where e.pre_evolution = cast(%s as pokemon_id)
+			and e.post_evolution = cast(%s as pokemon_id)
+			order by 1,3,2
+			;
+			"""
+			data = [evolvePid, pid]
+			cur.execute(requireQuery, data)
+			requireList = cur.fetchall()
+
+			print(f"\t'{evolveName}' when the following requirements are satisfied:")
+
+			# only one requirement
+			if len(requireList) == 1:
+				if (requireList[0][2]):
+					print(f"\t\tNOT {requireList[0][3]}\n")
+				else:
+					print(f"\t\t{requireList[0][3]}\n")
+				continue
+			# two or more requirements: compare two at a time
+			helpers.pokemonEvolutionsPrintRequirements(requireList)
+
+
+	# Find all pokemon that the given pokemon evolves into
+	postEvolveQuery = """select distinct
+		e.post_evolution,
+		p.name
+	from evolutions e
+	join pokemon p on e.post_evolution = p.id
+	where e.pre_evolution = cast(%s as pokemon_id)
+	order by 1
+	;
+	"""
+	data = [pid]
+	cur.execute(postEvolveQuery, data)
+	postEvolveList = cur.fetchall()
+	if postEvolveList == []:
+		print(f"'{Pokemon_Name}' doesn't have any post-evolutions.\n")
+	else:
+		print(f"'{Pokemon_Name}' can evolve into:")
+
+		# Evolution requirements
+		for i in postEvolveList:
+			evolvePid, evolveName = i
+
+			requireQuery = """select distinct
+				e.id,
+				r.id,
+				er.inverted,
+				r.assertion
+			from evolution_requirements er
+			join requirements r on er.requirement = r.id
+			join evolutions e on er.evolution = e.id
+			where e.pre_evolution = cast(%s as pokemon_id)
+			and e.post_evolution = cast(%s as pokemon_id)
+			order by 1,3,2
+			;
+			"""
+			data = [pid, evolvePid]
+			cur.execute(requireQuery, data)
+			requireList = cur.fetchall()
+
+			print(f"\t'{evolveName}' when the following requirements are satisfied:")
+
+			# only one requirement
+			if len(requireList) == 1:
+				if (requireList[0][2]):
+					print(f"\t\tNOT {requireList[0][3]}\n")
+				else:
+					print(f"\t\t{requireList[0][3]}\n")
+				continue
+			# two or more requirements: compare two at a time
+			helpers.pokemonEvolutionsPrintRequirements(requireList)
+
+
+if __name__ == '__main__':
+	try:
+		db = psycopg2.connect(dbname="ass2")
+		main()
+	except psycopg2.Error as err:
+		print("DB error: ", err)
+	except Exception as err:
+		print("Internal Error: ", err)
+		raise err
+	finally:
+		if db is not None:
+			db.close()
+	sys.exit(0)

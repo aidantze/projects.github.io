@@ -1,0 +1,248 @@
+#! /usr/bin/env python3
+
+
+"""
+COMP3311
+23T1
+Assignment 2
+Pokemon Database
+
+Written by: Aidan Tan (z5360925)
+Written on: 
+	Start: 7/4/23
+	End: 12/4/23
+
+Encounter Summary
+
+Print a summary of all the Pokemon that can be encountered at a given location in a given game
+"""
+
+
+import sys
+import psycopg2
+import helpers
+
+
+### Constants
+USAGE = f"Usage: {sys.argv[0]} <Location> <Game>"
+
+
+### Globals
+db = None
+Location = None
+Game = None
+
+
+### Command-line args
+if len(sys.argv) != 3:
+	print(USAGE, file=sys.stderr)
+	sys.exit(1)
+Location = helpers.clean(sys.argv[1])
+Game     = helpers.clean(sys.argv[2])
+
+
+def main():
+	cur = db.cursor()
+
+	# error checking
+	locationVerifyQuery = "select name from locations where name = %s;"
+	data = [Location]
+	cur.execute(locationVerifyQuery, data)
+	locationVerifyOutput = cur.fetchone()
+	if locationVerifyOutput == None:
+		print(f"'{Location}' isn't a location in the Pokemon series.", file=sys.stderr)
+		exit(1)
+	
+	gameVerifyQuery = "select name from games where name = %s;"
+	data = [Game]
+	cur.execute(gameVerifyQuery, data)
+	gameVerifyOutput = cur.fetchone()
+	if gameVerifyOutput == None:
+		print(f"'Pokemon {Game}' isn't a game in the Pokemon series.", file=sys.stderr)
+		exit(1)
+	
+	locateGameVerifyQuery = """select g.name 
+	from games g 
+	join locations l on g.id = l.appears_in 
+	where g.name = %s
+	and l.name = %s
+	;
+	"""
+	data = [Game, Location]
+	cur.execute(locateGameVerifyQuery, data)
+	locateGameVerifyOutput = cur.fetchone()
+	if locateGameVerifyOutput == None:
+		print(f"'{Location}' isn't in 'Pokemon {Game}'.", file=sys.stderr)
+		exit(1)
+
+	encounterQuery = """select
+		p.name as pname,
+		p.id,
+		e.rarity,
+		e.levels
+	from pokemon p
+	join encounters e on p.id = e.occurs_with
+	join locations l on e.occurs_at = l.id
+	join games g on l.appears_in = g.id
+	where g.name = %s
+	and l.name = %s
+	order by 3 desc, 1, 4
+	;
+	"""
+	data = [Game, Location]
+	cur.execute(encounterQuery, data)
+	encounterList = cur.fetchall()
+
+	print(f"\nIn 'Pokemon {Game}' at '{Location}' the following Pokemon can be Encountered:\n")
+
+	for i in encounterList:
+		pokemon, pid, rarity, levels = i
+		print(f"\t{pokemon}:")
+
+		# get types
+		typesQuery1 = """select t.name 
+		from pokemon p 
+		join types t on p.first_type = t.id 
+		where p.id = cast(%s as pokemon_id)
+		;
+		"""
+		data = [pid]
+		cur.execute(typesQuery1, data)
+		typesTuple1 = cur.fetchone()
+		firstType = typesTuple1[0]
+
+		typesQuery2 = """select t.name 
+		from pokemon p 
+		join types t on p.second_type = t.id 
+		where p.id = cast(%s as pokemon_id)
+		;
+		"""
+		data = [pid]
+		cur.execute(typesQuery2, data)
+		typesTuple2 = cur.fetchone()
+		if typesTuple2 is None:
+			print(f"\t\tType: {firstType}")
+		else:
+			secondType = typesTuple2[0]
+			print(f"\t\tType: {firstType}/{secondType}")
+
+		# rarity and min/max level
+		print(f"\t\tRarity: {rarity}%")
+		levels = eval(levels)
+		min_level = levels[0]
+		max_level = levels[1]
+		print(f"\t\tLevels: min {min_level}, max {max_level}")
+
+		eggOutput = ""
+		abilityOutput = ""
+		requireOutput = ""
+
+		# get pokemon's egg groups
+		eggQuery = """select distinct
+			eg.name
+		from egg_groups eg
+		join in_group i on eg.id = i.egg_group
+		join pokemon p on i.pokemon = p.id
+		join encounters e on p.id = e.occurs_with
+		join locations l on e.occurs_at = l.id
+		join games g on l.appears_in = g.id
+		where g.name = %s
+		and l.name = %s
+		and p.id = cast(%s as pokemon_id)
+		order by 1
+		;
+		"""
+		data = [Game, Location, pid]
+		cur.execute(eggQuery, data)
+		eggList = cur.fetchall()
+		# omit line completely if not exist
+		if eggList != None:
+			for j in eggList:
+				if eggOutput == "":
+					eggOutput = f"{j[0]}"
+				else:
+					eggOutput = f"{eggOutput}, {j[0]}"
+
+			print(f"\t\tEgg Groups: {eggOutput}")
+
+		# get pokemon's abilities
+		abilityQuery = """select distinct
+			a.name,
+			k.hidden
+		from abilities a
+		join knowable_abilities k on a.id = k.knows
+		join pokemon p on k.known_by = p.id
+		join encounters e on p.id = e.occurs_with
+		join locations l on e.occurs_at = l.id
+		join games g on l.appears_in = g.id
+		where g.name = %s
+		and l.name = %s
+		and p.id = cast(%s as pokemon_id)
+		order by 1
+		;
+		"""
+		data = [Game, Location, pid]
+		cur.execute(abilityQuery, data)
+		abilityList = cur.fetchall()
+		# omit line completely if not exist
+		if abilityList != None:
+			for j in abilityList:
+				# ignore hidden abilities
+				if j[1] == True:
+					continue
+				elif abilityOutput == "":
+					abilityOutput = f"{j[0]}"
+				else:
+					abilityOutput = f"{abilityOutput}, {j[0]}"
+
+			print(f"\t\tAbilities: {abilityOutput}")
+
+		# get pokemon's encounter requirements
+		requireQuery = """select distinct
+			r.assertion,
+			er.inverted
+		from requirements r
+		join encounter_requirements er on r.id = er.requirement
+		join encounters e on er.encounter = e.id
+		join locations l on e.occurs_at = l.id
+		join games g on l.appears_in = g.id
+		join pokemon p on e.occurs_with = p.id
+		where g.name = %s
+		and l.name = %s
+		and p.id = cast(%s as pokemon_id)
+		and e.rarity = %s
+		and e.levels = %s
+		;
+		"""
+		data = [Game, Location, pid, rarity, levels]
+		cur.execute(requireQuery, data)
+		requireList = cur.fetchall()
+		# print(requireList)
+		# all pokemon must have an encounter requirement
+		for j in requireList:
+			# ignore inverted abilities
+			if (j[1] == True) and (requireOutput == ""):
+				requireOutput = f"\t\t\tNOT {j[0]}\n"
+			elif j[1] == True:
+				requireOutput = f"{requireOutput}\t\t\tNOT {j[0]}\n"
+			elif requireOutput == "":
+				requireOutput = f"\t\t\t{j[0]}\n"
+			else:
+				requireOutput = f"{requireOutput}\t\t\t{j[0]}\n"
+
+		print(f"\t\tEncounter Requirements:\n{requireOutput}")
+
+
+if __name__ == '__main__':
+	try:
+		db = psycopg2.connect(dbname="ass2")
+		main()
+	except psycopg2.Error as err:
+		print("DB error: ", err)
+	except Exception as err:
+		print("Internal Error: ", err)
+		raise err
+	finally:
+		if db is not None:
+			db.close()
+	sys.exit(0)

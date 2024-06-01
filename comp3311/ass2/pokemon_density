@@ -1,0 +1,182 @@
+#! /usr/bin/env python3
+
+
+"""
+COMP3311
+23T1
+Assignment 2
+Pokemon Database
+
+Written by: Aidan Tan (z5360925)
+Written on: 
+	Start: 8/4/23
+	End: 13/4/23
+
+Pokemon Density
+
+Find the density of pokemon in each location within a given region.
+"""
+
+
+import sys
+import psycopg2
+import helpers
+import math
+
+
+### Constants
+USAGE = f"Usage: {sys.argv[0]} <Region>"
+
+
+### Globals
+db = None
+Region = None
+
+
+### Command-line args
+if len(sys.argv) != 2:
+	print(USAGE, file=sys.stderr)
+	sys.exit(1)
+Region = helpers.clean(sys.argv[1])
+
+
+def main():
+	cur = db.cursor()
+
+	regionVerifyQuery = "select distinct region from games;"
+	cur.execute(regionVerifyQuery)
+	regionVerifyOutput = cur.fetchall()
+	regionVerifyList = helpers.myPokemonTupleToStr(regionVerifyOutput)
+	if Region not in regionVerifyList:
+		print(f"'{Region}' isn't a region in the Pokemon series.", file=sys.stderr)
+		exit(1)
+
+	# Find all locations in a region
+	# We explot the fact that each duplicate location corresponds to a different game
+	# Meaning we don't need to select from games table later on
+	locateQuery = f"""select distinct
+		l.id,
+		l.name
+	from locations l
+	join games g on l.appears_in = g.id
+	where g.region = cast('{Region}' as regions)
+	group by 2,1
+	order by 2
+	;
+	"""
+	cur.execute(locateQuery)
+	locateQueryOutput = cur.fetchall()
+	
+	locateDensityList = []
+	locateNoDensityList = []
+	totalGames = 0	# used for average calculation
+	densityAverage = 0
+	for i in range(len(locateQueryOutput)):
+		locateId, location = locateQueryOutput[i]
+
+		# check that a pokemon exists in this location
+		pokemonVerifyQuery = """select p.id
+		from pokemon p
+		join encounters e on p.id = e.occurs_with
+		join locations l on e.occurs_at = l.id
+		join games g on l.appears_in = g.id
+		where l.id = %s
+		and g.region = cast(%s as Regions)
+		limit 1
+		;
+		"""
+		cur.execute(pokemonVerifyQuery, [locateId, Region])
+		pokemonVerifyOutput = cur.fetchone()
+		if pokemonVerifyOutput is None:
+
+			# pokemon does not exist, next location not the last, and next location same as this location
+			if i + 1 < len(locateQueryOutput): 
+				if locateQueryOutput[i][1] == locateQueryOutput[i + 1][1]:
+					continue
+			# total games is zero (cannot divide by zero)
+			if totalGames == 0:
+				locateNoDensityList.append(location)
+				continue
+			
+			densityAverage = densityAverage / totalGames
+			locateDensityList.append({
+				"location": location,
+				"density": round(densityAverage, 4)
+			})
+			totalGames = 0
+			densityAverage = 0
+			continue
+
+		# For each game, find all pokemon
+		pokemonQuery = """select
+			p.id,
+			p.average_height,
+			p.average_weight,
+			e.rarity
+		from pokemon p
+		join encounters e on p.id = e.occurs_with
+		join locations l on e.occurs_at = l.id
+		join games g on l.appears_in = g.id
+		where l.id = %s
+		and g.region = cast(%s as regions)
+		;
+		"""
+		cur.execute(pokemonQuery, [locateId, Region])
+		pokemonQueryList = cur.fetchall()
+		if pokemonQueryList is None:
+			continue
+
+		densitySum = 0
+		for k in pokemonQueryList:
+			# For each pokemon, calculate density
+			_, height, weight, rarity = k
+			# Adjust units for width and height, get radius, calculate volume, calculate density, multiply density by rarity
+			densitySum += ((weight * 1000) / ((4 / 3) * math.pi * ((height * 100) / 2)**3) * (rarity / 100))
+			
+		# Calculate sum of all pokemon densities
+		densityAverage += densitySum
+		totalGames += 1
+
+		# check that the next location is different to this locations, or if there is no next location
+		# so we can evaluate density of this location
+		if i + 1 < len(locateQueryOutput): 
+			if locateQueryOutput[i][1] == locateQueryOutput[i + 1][1]:
+				continue
+		# Calculate average of the sums of densities across all games which have the location
+		densityAverage = densityAverage / totalGames
+		locateDensityList.append({
+			"location": location,
+			"density": round(densityAverage, 4)
+		})
+		totalGames = 0
+		densityAverage = 0
+
+	# Sort by density, then by location. Locations with no density are sorted by location only
+	locateDensityList = sorted(locateDensityList, key=lambda d: d['location'])
+	locateDensityList = sorted(locateDensityList, key=lambda d: d['density'], reverse=True)
+	locateNoDensityList.sort()
+
+	# Print results for the given region
+	print(f"\nThe average density of Pokemon within each location in the '{Region}' region:\n")
+	for i in locateDensityList:
+		print(f"\t{i['location']}:\t{i['density']:.4f}")
+	
+	print(f"\nThe following locations in the '{Region}' region have no wild Pokemon encounters:\n")
+	for i in locateNoDensityList:
+		print(f"\t{i}")
+
+	print()
+
+if __name__ == '__main__':
+	try:
+		db = psycopg2.connect(dbname="ass2")
+		main()
+	except psycopg2.Error as err:
+		print("DB error: ", err)
+	except Exception as err:
+		print("Internal Error: ", err)
+		raise err
+	finally:
+		if db is not None:
+			db.close()
+	sys.exit(0)
