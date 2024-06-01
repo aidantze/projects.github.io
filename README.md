@@ -58,10 +58,13 @@ A project that performed some introductory data manipulation using pandas, befor
 
 *Pair Project*
 
-Improves upon the current dungeon-crawler game by implementing new features. My partner worked on a logic gates feature. Meanwhile I worked on the snakes feature, which is a new enemy with complex behaviour, and the scoring feature, which accurately calculates score as the game progresses. The focus of this assignment were design patterns and testing in Java. 
+Improves upon the current dungeon-crawler game by implementing new features. My partner worked on a logic gates feature. Meanwhile I worked on the snakes feature, which is a new enemy with complex behaviour, and evolution of requirements, which involved creating goals for takedown of enemies. In addition I did the majority of the open refactoring section, and contributed to both individual and pair blogging. The focus of this assignment was on design patterns and refactoring in Java. 
+
+<img width="830" alt="Screen Shot 2024-06-01 at 20 58 10" src="https://github.com/aidantze/projects.github.io/assets/122945487/81ddf480-4829-4064-8e1f-87de6f3c3522">
+<img width="819" alt="Screen Shot 2024-06-01 at 20 58 04" src="https://github.com/aidantze/projects.github.io/assets/122945487/755d18d7-edf4-422e-bf51-a44ef8031c73">
 
 ### assignment-i - Satellite Simulation
-Simulates the orbit of satellites around Jupiter using basic object-oriented programming techniques in Java. The focus of this assignment was streams and debugging in Java. 
+Simulates the orbit of satellites around Jupiter using basic object-oriented programming techniques in Java. The focus of this assignment was on streams and debugging in Java. 
 
 
 ## seng2021 - Software Requirements and Design Workshop
