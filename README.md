@@ -64,7 +64,7 @@ Uses constraint satisfaction to play a modified game of Hashiwokakero: placement
 
 <img width="285" alt="Screen Shot 2024-03-15 at 12 52 46" src="https://github.com/aidantze/projects.github.io/assets/122945487/8b12ee28-64b5-45f2-a36e-9d847cbd1b9b">
 
-*img: model-based agent successfully playing Hashiwokakero*
+*img: model-based agent successfully playing Hashiwokakero in a terminal environment*
 
 
 ## fins3646 - Toolkit for Finance
@@ -114,7 +114,7 @@ API which uses PostgreSQL to store relevant e-invoicing data in a storage API. T
 
 Web service for users to create, manage and send invoices to other users easily and securely. The focus of the web service was on accessibility for visually impaired users (inspired by a true story of a blind accountant). The web services was also managed, documented and deployed using the same industry-grade services as the storage API. My main contribution was in design and development of the frontend, as well as pitching our services to a live panel of stakeholders.
 
-<img width="1364" alt="Screen_Shot_2023-04-19_at_20 09 42" src="https://github.com/aidantze/projects.github.io/assets/122945487/79c2c9e1-c1be-4a2e-ab70-e583dde860b7">
+![IMG_0045](https://github.com/aidantze/projects.github.io/assets/122945487/e97c0226-3035-4179-a284-82cb98e34285)
 
 *img: prototype design of the frontend web service*
 
