@@ -1,0 +1,28 @@
+
+NOTE:
+- Your time complexities should be expressed in big-O notation and be in
+  terms of n, where n is the number of cells in the maze.
+
+============
+  solveBfs
+============
+
+- Worst case time complexity: O(n^2)
+
+- Explanation: The solve function contains many functions called sequentially which 
+all have a time complexity of O(1), but a main while loop will continue to execute
+until the queue is empty, which has worst case time complexity O(n). Inside this
+loop is a recursive function mark_cell() which has worst case time complexity O(n).
+Therefore the overall worst case time complexity is O(n^2).  
+
+============
+  solveDfs
+============
+
+- Worst case time complexity: O(n^2)
+
+- Explanation: The solveDfs function is almost identical to solveBfs except for the
+use of a Stack instead of a Queue. Every equivalent function has identical time
+complexity (e.g. QueueEnqueue is equivalent to StackPush which is O(1)). Thus the
+overall worst case time complexity is O(n^2).
+
