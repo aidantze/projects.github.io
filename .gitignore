@@ -141,3 +141,4 @@ dist
 
 # other files to ignore
 readme_assets/
+.DS_Store
