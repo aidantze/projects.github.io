@@ -20,9 +20,9 @@ I led a 5-member software team where the group built **_KeyTrend_**, a news keyw
 My role in the project was very substantial. I configured all of the github repo's ci/cd pipeline, deployed to Render, build the service's Swagger documentation and managed all Jira tasks, plus a few backend routes and frontend service layer integrations.
 
 **Links**
-- Deployed frontend: (KeyTrend)[https://keytrend.onrender.com]
-- Deployed backend: (KeyTrend API)[https://keytrend-api.onrender.com]
-- Swagger OpenAPI documentation: (Swagger)[https://app.swaggerhub.com/apis-docs/aidan-bbf/KeyTrend/1.0.0#/]
+- Deployed frontend: https://keytrend.onrender.com
+- Deployed backend: https://keytrend-api.onrender.com
+- Swagger OpenAPI documentation: https://app.swaggerhub.com/apis-docs/aidan-bbf/KeyTrend/1.0.0#/
 
 Note that the links above may not work if the services have been depreciated.
 
@@ -44,7 +44,7 @@ The microservice also uses a number of external APIs. It fetches from NewsAPI an
 
 <img width="1088" alt="Screenshot 2025-04-29 at 14 29 48" src="https://github.com/user-attachments/assets/00b3bec5-9489-470e-82de-4365f4b82929" />
 
-*img: screenshot of Swagger healthcheck route returning "alive" status in deployed backend
+*img: screenshot of Swagger healthcheck route returning "alive" status in deployed backend*
 
 ### SENG3011_H17A_OMEGA-web-app
 
@@ -74,6 +74,8 @@ UDP was used for all command interactions, while TCP was reserved specifically f
 <img width="1079" alt="Screenshot 2025-04-30 at 15 12 52" src="https://github.com/user-attachments/assets/2dbf052a-288b-4138-8a13-50dcc8731c3f" />
 
 *img: screenshot of terminal with 1 server and 2 clients, clients simultaneously login with same username, only 1 is accepted*
+
+## comp9321 - Data Services Engineering
 
 ### ass3 - Machine Learning
 This machine learning assignment does 2 things:
