@@ -7,7 +7,63 @@ https://aidantze.github.io/
 
 I will list all projects, and provide a brief description for each, below (sorted by most recent project or uni course):
 
-Last updated: 1/6/24
+Last updated: 1/5/25
+
+## seng3011 - Software DevOps Workshop
+
+*Industry-relevant project*
+
+This course was an entire workshop focusing on DevOps practices, such as continuous integration, delivery and deployment, containerisation, testing practices, and site reliability monitoring/observability. 
+
+I led a 5-member software team where the group built **_KeyTrend_**, a news keyword microservice designed to enhance news article fetching from multiple data sources, including NewsAPI and the Australian Financial Review, and use AI insights to extract relevant keywords, summarise articles and visualise keyword usage in articles over time. We had to pitch the project to a live panel of stakeholders, and demonstrate the behaviour of the deployed service.
+
+My role in the project was very substantial. I configured all of the github repo's ci/cd pipeline, deployed to Render, build the service's Swagger documentation and managed all Jira tasks, plus a few backend routes and frontend service layer integrations.
+
+**Links**
+- Deployed frontend: (KeyTrend)[https://keytrend.onrender.com]
+- Deployed backend: (KeyTrend API)[https://keytrend-api.onrender.com]
+- Swagger OpenAPI documentation: (Swagger)[https://app.swaggerhub.com/apis-docs/aidan-bbf/KeyTrend/1.0.0#/]
+
+Note that the links above may not work if the services have been depreciated.
+
+### SENG3011_H17A_OMEGA-nodeapp
+
+*Group Project*
+
+Microservice API built using express.js. Connects to MongoDB Atlas instance which stores news articles and fetches them in real-time (approx. once a day). This API was managed using GitHub, with a ci/cd pipeline that performs status checks and generates test and coverage reports with AI summaries to inform developers which files are not covered or which tests are failing. It was deployed using Render, with GitHub actions that automatically push code to Render, and Swagger OpenAPI documentation configured for the deployed environment. 
+
+The microservice also uses a number of external APIs. It fetches from NewsAPI and AFR dataset API. It uses Gemini to extract keywords from articles, and natural to perform the same action if Gemini quota is reached. Plans to also use Gemini for article summarisation did not get implemented in time, due to budget issues. 
+
+[images]
+
+
+### SENG3011_H17A_OMEGA-web-app
+
+*Group Project*
+
+Web service for users to fetch articles, extract keywords from articles, visualise keyword usage in articles over time on a live graph, and keep up with keyword trends. This service was built using React.js, with axios library used to manage the service layer, which calls the backend. The service was managed, documented and deployed using the same industry-grade tools as the microservice API. 
+
+[images]
+
+
+## comp3331 - Computer Networks and Applications
+This networks assignment involved the creation of **_SockForums_ 🧦**, an online forum application that operates in the terminal environment and communicates between client and server using UDP and TCP protocols.
+
+Users register/login with a username and password stored in a credentials.txt file in the server (yes, this isn't very secure, but it had to be implemented according to assignment specification). Threads are created and stored in individual files in the server containing messages and file upload notifications. Users can create, list and delete threads, and create, read, edit and delete messages, plus they can request to upload a file to a thread or download a file from a thread. Finally, the user can logout safely. 
+
+UDP was used for all command interactions, while TCP was reserved specifically for file transfers. Multi-threading was implemented to handle concurrency, so the server can handle two users logging in with the same username simultaneously. Error messages are communicated from server and client to prompt retransmission in the event of packet loss. 
+
+[images]
+
+
+### ass3 - Machine Learning
+This machine learning assignment does 2 things:
+1. Predicts the age of a policyholder in a car insurance company using a regression model. This model aims to reduce mean squared error
+2. Predicts if a policyholder in a car insurance company will lodge a claim using a classification model. This model aims to maximise F1-score while reducing overfitting
+
+<img width="655" alt="Screen Shot 2024-06-01 at 21 16 23" src="https://github.com/aidantze/projects.github.io/assets/122945487/0874eb12-3ec5-47d5-8ac2-4b7eed58bb6b">
+
+*img: code screenshot of testing different models for regression*
 
 ## comp9321 - Data Services Engineering
 
@@ -100,7 +156,9 @@ Simulates the orbit of satellites around Jupiter using basic object-oriented pro
 
 *Industry-relevant project*
 
-This course was an entire workshop focusing on requirements and design, where our group built an e-invoicing web service and an API deployed using AWS and swagger to be used by other groups. 
+This course was an entire workshop focusing on requirements and design in API development. 
+
+I led a 5-member software team, where the group built an e-invoicing web service and an API deployed using AWS and swagger to be used by other groups. My role in the service was in some backend routes, and most frontend component designs, as well as managing Jira tasks. 
 
 ### se2021-23t1-einvoicing-api-h10a-brownie-storage-api
 
@@ -136,7 +194,7 @@ An assignment which uses SQL to store and manage data about different kinds of b
 
 This course was a formal verification course, which used mathematical predicates and Dafny to prove the validity of all internal statements within an algorithm or function (white-box testing). 
 
-One of the assignments involved applying the Dutch Flag Sort algorithm to efficiently sorting a sample of DNA, of which there would be billions and billions of DNA-pairs, and 4 different permuations of these pairs to sort through. In terms of Big-O notation for time complexity, the Dutch Flag Sort algorithm reduces an O(n^2) sorting algorithm to an O(n) sorting algorithm. 
+One of the assignments involved applying the Dutch Flag Sort algorithm to efficiently sorting a sample of DNA, of which there would be billions and billions of DNA-pairs, and 4 different permuations of these pairs to sort through. In terms of Big-O notation for time complexity, the Dutch Flag Sort algorithm reduces an O(n^2) sorting algorithm to an O(n) sorting algorithm (hence why it's my favourite sorting algorithm!).
 
 <img width="595" alt="Screen Shot 2024-06-01 at 21 14 14" src="https://github.com/aidantze/projects.github.io/assets/122945487/c44486d9-0ff9-460d-bd4c-8bc3f4971cf0">
 
