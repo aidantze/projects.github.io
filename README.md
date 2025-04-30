@@ -1,4 +1,4 @@
-# projects.github.io
+<img width="1301" alt="Screenshot 2025-04-29 at 12 04 23" src="https://github.com/user-attachments/assets/a34818b6-9587-41ab-bf4b-f87ba759ad78" /># projects.github.io
 Welcome to my personal project portfolio! Here you will find a range of all the relevant programming projects I have done over the course of my uni degree (at UNSW). This is not to say that these were the only projects I did. Rather, these were all the most relevant, high-scoring projects. 
 
 I have attempted in the past to create my own portfolio website from scratch. However, it has not been updated recently. It remains undeveloped, due to the fact that I want to recreate it using industry grade tools (such as React, Bootstrap and AWS deployment), but feel free to see my first attempt at frontend programming!
@@ -8,6 +8,11 @@ https://aidantze.github.io/
 I will list all projects, and provide a brief description for each, below (sorted by most recent project or uni course):
 
 Last updated: 1/5/25
+
+### Contents
+
+(2025 Term 1 - seng3011)[#-seng3011---Software-DevOps-Workshop]
+
 
 ## seng3011 - Software DevOps Workshop
 
@@ -34,8 +39,17 @@ Microservice API built using express.js. Connects to MongoDB Atlas instance whic
 
 The microservice also uses a number of external APIs. It fetches from NewsAPI and AFR dataset API. It uses Gemini to extract keywords from articles, and natural to perform the same action if Gemini quota is reached. Plans to also use Gemini for article summarisation did not get implemented in time, due to budget issues. 
 
-[images]
+<img width="932" alt="Screenshot 2025-04-04 at 13 59 06" src="https://github.com/user-attachments/assets/d5c29887-4ea1-4d76-80b1-2ce098a65f49" />
 
+*img: screenshot of github pull request with status checks all passing*
+
+<img width="1301" alt="Screenshot 2025-04-29 at 12 04 23" src="https://github.com/user-attachments/assets/f098e8b2-1e12-46fb-81f0-1d0e60f29a40" />
+
+*img: screenshot of Swagger OpenAPI documentation for deployed backend*
+
+<img width="1088" alt="Screenshot 2025-04-29 at 14 29 48" src="https://github.com/user-attachments/assets/00b3bec5-9489-470e-82de-4365f4b82929" />
+
+*img: screenshot of Swagger healthcheck route returning "alive" status in deployed backend
 
 ### SENG3011_H17A_OMEGA-web-app
 
@@ -43,8 +57,17 @@ The microservice also uses a number of external APIs. It fetches from NewsAPI an
 
 Web service for users to fetch articles, extract keywords from articles, visualise keyword usage in articles over time on a live graph, and keep up with keyword trends. This service was built using React.js, with axios library used to manage the service layer, which calls the backend. The service was managed, documented and deployed using the same industry-grade tools as the microservice API. 
 
-[images]
+<img width="1203" alt="Screenshot 2025-04-18 at 14 33 10" src="https://github.com/user-attachments/assets/e18c8fb1-d4e7-4df7-ae32-833a6542f333" />
 
+*img: screenshot of frontend displaying extracted keywords from backend route via service layer*
+
+<img width="1347" alt="Screenshot 2025-04-24 at 14 47 31" src="https://github.com/user-attachments/assets/2ef19b8f-55bc-4340-8047-5d44c2660a81" />
+
+*img: screenshot of frontend displaying current trending keywords and graphs from backend route via service layer*
+
+<img width="1272" alt="Screenshot 2025-04-29 at 15 17 45" src="https://github.com/user-attachments/assets/83509ee9-a9c5-4302-81e2-3c6a6e69730f" />
+
+*img: screenshot of Render logs for deployed frontend*
 
 ## comp3331 - Computer Networks and Applications
 This networks assignment involved the creation of **_SockForums_ 🧦**, an online forum application that operates in the terminal environment and communicates between client and server using UDP and TCP protocols.
@@ -53,8 +76,9 @@ Users register/login with a username and password stored in a credentials.txt fi
 
 UDP was used for all command interactions, while TCP was reserved specifically for file transfers. Multi-threading was implemented to handle concurrency, so the server can handle two users logging in with the same username simultaneously. Error messages are communicated from server and client to prompt retransmission in the event of packet loss. 
 
-[images]
+<img width="1079" alt="Screenshot 2025-04-30 at 15 12 52" src="https://github.com/user-attachments/assets/2dbf052a-288b-4138-8a13-50dcc8731c3f" />
 
+*img: screenshot of terminal with 1 server and 2 clients, clients simultaneously login with same username, only 1 is accepted*
 
 ### ass3 - Machine Learning
 This machine learning assignment does 2 things:
