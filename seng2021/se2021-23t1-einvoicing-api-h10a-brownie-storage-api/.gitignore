@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Genereated
+/coverage
+.nyc_output
+build/
+deploy.zip
+
+# Other
+.vscode
+.vs
+.idea
+.DS_Store
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

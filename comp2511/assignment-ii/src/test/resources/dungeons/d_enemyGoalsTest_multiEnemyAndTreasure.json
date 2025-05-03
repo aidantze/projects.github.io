@@ -1,0 +1,120 @@
+{
+    "entities": [
+        {
+            "type": "player",
+            "x": 0,
+            "y": 1
+        },
+        {
+            "type": "sword",
+            "x": 1,
+            "y": 1
+        },
+        {
+            "type": "zombie_toast_spawner",
+            "x": 1,
+            "y": 0
+        },
+        {
+            "type": "sword",
+            "x": 2,
+            "y": 0
+        },
+        {
+            "type": "zombie_toast_spawner",
+            "x": 2,
+            "y": 1
+        },
+        {
+            "type": "boulder",
+            "x": 3,
+            "y": 0
+        },
+        {
+            "type": "treasure",
+            "x": 3,
+            "y": 1
+        },
+        {
+            "type": "boulder",
+            "x": 3,
+            "y": 2
+        },
+        {
+            "type": "boulder",
+            "x": 4,
+            "y": 0
+        },
+        {
+            "type": "treasure",
+            "x": 4,
+            "y": 1
+        },
+        {
+            "type": "boulder",
+            "x": 4,
+            "y": 2
+        },
+        {
+            "type": "boulder",
+            "x": 5,
+            "y": 0
+        },
+        {
+            "type": "boulder",
+            "x": 5,
+            "y": 2
+        },
+        {
+            "type": "boulder",
+            "x": 6,
+            "y": 0
+        },
+        {
+            "type": "spider",
+            "x": 6,
+            "y": 1
+        },
+        {
+            "type": "boulder",
+            "x": 6,
+            "y": 2
+        },
+        {
+            "type": "boulder",
+            "x": 7,
+            "y": 0
+        },
+        {
+            "type": "spider",
+            "x": 7,
+            "y": 1
+        },
+        {
+            "type": "boulder",
+            "x": 7,
+            "y": 2
+        },
+        {
+            "type": "boulder",
+            "x": 8,
+            "y": 0
+        },
+        {
+            "type": "boulder",
+            "x": 8,
+            "y": 2
+        }
+    ],
+    "goal-condition": {
+        "goal": "AND",
+        "subgoals": [
+            {
+                "goal": "enemies"
+            },
+            {
+                "goal": "treasure"
+            }
+        ]
+    }
+}
