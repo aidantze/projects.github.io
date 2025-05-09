@@ -34,6 +34,8 @@ Microservice API built using express.js. Connects to MongoDB Atlas instance whic
 
 The microservice also uses a number of external APIs. It fetches from NewsAPI and AFR dataset API. It uses Gemini to extract keywords from articles, and natural to perform the same action if Gemini quota is reached. Plans to also use Gemini for article summarisation did not get implemented in time, due to budget issues. 
 
+The microservice API was also used by 3 other groups in the course, making it robust and useful for integrating with external services.
+
 <img width="932" alt="Screenshot 2025-04-04 at 13 59 06" src="https://github.com/user-attachments/assets/d5c29887-4ea1-4d76-80b1-2ce098a65f49" />
 
 *img: screenshot of github pull request with status checks all passing*
@@ -73,18 +75,7 @@ UDP was used for all command interactions, while TCP was reserved specifically f
 
 <img width="1079" alt="Screenshot 2025-04-30 at 15 12 52" src="https://github.com/user-attachments/assets/2dbf052a-288b-4138-8a13-50dcc8731c3f" />
 
-*img: screenshot of terminal with 1 server and 2 clients, clients simultaneously login with same username, only 1 is accepted*
-
-## comp9321 - Data Services Engineering
-
-### ass3 - Machine Learning
-This machine learning assignment does 2 things:
-1. Predicts the age of a policyholder in a car insurance company using a regression model. This model aims to reduce mean squared error
-2. Predicts if a policyholder in a car insurance company will lodge a claim using a classification model. This model aims to maximise F1-score while reducing overfitting
-
-<img width="655" alt="Screen Shot 2024-06-01 at 21 16 23" src="https://github.com/aidantze/projects.github.io/assets/122945487/0874eb12-3ec5-47d5-8ac2-4b7eed58bb6b">
-
-*img: code screenshot of testing different models for regression*
+*img: screenshot of terminal with 1 server and 2 clients over UDP connection, clients simultaneously login with same username, only 1 is accepted*
 
 ## comp9321 - Data Services Engineering
 
@@ -139,6 +130,14 @@ Report which analyses different search algorithms, including heuristic path sear
 ### ass1 - Constraint Satisfaction Agent
 Uses constraint satisfaction to play a modified game of Hashiwokakero: placement of bridges between adjacent islands which must satisfy the number on the island. The algorithm uses forward checking and combinatorics to try all possible combinations of bridge placements at any given island before moving to the next island, and checks if all constraints are satisfied before terminating. 
 
+Different characters correspond to a different number of bridges between island numbers, and no bridge can cross over another bridge:
+**\-** 1 horizontal bridge
+**=** 2 horizontal bridges
+**E** 3 horizontal bridges
+**|** 1 vertical bridge
+**"** 2 vertical bridges
+**\#** 3 vertical bridges
+
 <img width="285" alt="Screen Shot 2024-03-15 at 12 52 46" src="https://github.com/aidantze/projects.github.io/assets/122945487/8b12ee28-64b5-45f2-a36e-9d847cbd1b9b">
 
 *img: model-based agent successfully playing Hashiwokakero in a terminal environment*
@@ -179,13 +178,13 @@ Simulates the orbit of satellites around Jupiter using basic object-oriented pro
 
 This course was an entire workshop focusing on requirements and design in API development. 
 
-I led a 5-member software team, where the group built an e-invoicing web service and an API deployed using AWS and swagger to be used by other groups. My role in the service was in some backend routes, and most frontend component designs, as well as managing Jira tasks. 
+I led a 5-member software team, where the group built **_ei-ei_**, an e-invoicing web service and storage API deployed using AWS and swagger to be used by other groups. My role in the service was in some backend routes, and most frontend component designs, as well as managing Jira tasks. 
 
 ### se2021-23t1-einvoicing-api-h10a-brownie-storage-api
 
 *Group Project*
 
-API which uses PostgreSQL to store relevant e-invoicing data in a storage API. This API was managed using GitHub, documented on Swagger and deployed using AWS Elastic Beanstalk. The storage API was the most popular in terms of usage by other groups in the course, compared to other storage APIs. 
+API which uses PostgreSQL to store relevant e-invoicing data in a storage API. This API was managed using GitHub, documented on Swagger and deployed using AWS Elastic Beanstalk. The storage API was the most popular in terms of usage by other groups in the course, compared to other storage APIs.
 
 ### se2021-23t1-einvoicing-frontend-h10a-brownie-storage-api
 
