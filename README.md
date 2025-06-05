@@ -132,14 +132,17 @@ Uses constraint satisfaction to play a modified game of Hashiwokakero: placement
 
 Different characters correspond to a different number of bridges between island numbers, and no bridge can cross over another bridge:
 
-| Symbol   | Description          |
-| -------- | -------------------- |
-| **\-**   | 1 horizontal bridge  |
-| **=**    | 2 horizontal bridges |
-| **E**    | 3 horizontal bridges |
-| **\|**   | 1 vertical bridge    |
-| **"**    | 2 vertical bridges   |
-| **\#**   | 3 vertical bridges   |
+| Symbol   | Description                          |
+| -------- | ------------------------------------ |
+| **\-**   | 1 horizontal bridge                  |
+| **=**    | 2 horizontal bridges                 |
+| **E**    | 3 horizontal bridges                 |
+| **\|**   | 1 vertical bridge                    |
+| **"**    | 2 vertical bridges                   |
+| **\#**   | 3 vertical bridges                   |
+| **a**    | island requiring 10 adjacent bridges |
+| **b**    | island requiring 11 adjacent bridges |
+| **c**    | island requiring 12 adjacent bridges |
 
 <img width="285" alt="Screen Shot 2024-03-15 at 12 52 46" src="https://github.com/aidantze/projects.github.io/assets/122945487/8b12ee28-64b5-45f2-a36e-9d847cbd1b9b">
 
