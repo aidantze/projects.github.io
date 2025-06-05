@@ -131,12 +131,15 @@ Report which analyses different search algorithms, including heuristic path sear
 Uses constraint satisfaction to play a modified game of Hashiwokakero: placement of bridges between adjacent islands which must satisfy the number on the island. The algorithm uses forward checking and combinatorics to try all possible combinations of bridge placements at any given island before moving to the next island, and checks if all constraints are satisfied before terminating. 
 
 Different characters correspond to a different number of bridges between island numbers, and no bridge can cross over another bridge:
-**\-** 1 horizontal bridge
-**=** 2 horizontal bridges
-**E** 3 horizontal bridges
-**|** 1 vertical bridge
-**"** 2 vertical bridges
-**\#** 3 vertical bridges
+
+| Symbol   | Description          |
+| -------- | -------------------- |
+| **\-**   | 1 horizontal bridge  |
+| **=**    | 2 horizontal bridges |
+| **E**    | 3 horizontal bridges |
+| **|**    | 1 vertical bridge    |
+| **"**    | 2 vertical bridges   |
+| **\#**   | 3 vertical bridges   |
 
 <img width="285" alt="Screen Shot 2024-03-15 at 12 52 46" src="https://github.com/aidantze/projects.github.io/assets/122945487/8b12ee28-64b5-45f2-a36e-9d847cbd1b9b">
 
