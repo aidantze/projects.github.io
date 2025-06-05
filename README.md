@@ -137,7 +137,7 @@ Different characters correspond to a different number of bridges between island 
 | **\-**   | 1 horizontal bridge  |
 | **=**    | 2 horizontal bridges |
 | **E**    | 3 horizontal bridges |
-| **|**    | 1 vertical bridge    |
+| **\|**   | 1 vertical bridge    |
 | **"**    | 2 vertical bridges   |
 | **\#**   | 3 vertical bridges   |
 
