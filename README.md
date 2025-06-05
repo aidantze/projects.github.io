@@ -24,7 +24,7 @@ My role in the project was very substantial. I configured all of the github repo
 - Deployed backend: https://keytrend-api.onrender.com
 - Swagger OpenAPI documentation: https://app.swaggerhub.com/apis-docs/aidan-bbf/KeyTrend/1.0.0#/
 
-Note that the links above may not work if the services have been depreciated.
+Note: services have been suspended to minimise costs. See images below for evidence.
 
 ### SENG3011_H17A_OMEGA-nodeapp
 
