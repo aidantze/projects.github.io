@@ -11,6 +11,8 @@ I will list all projects, and provide a brief description for each, below (sorte
 
 ## fins3645 - Crypto Market Data Design and Analysis
 
+*Industry-relevant project*
+
 This course was an entire workshop focusing on the 4 stages of the Data Factory Floor, for data analytics for financial markets, specifically, cryptocurrency markets.
 
 This individual project involved the creation of **_Tilt.ai_**, a crypto investment trading platform to visualise the results of data analysis of crypto markets. The service retrieves both daily OHLCV (open, high, low, close, volume) price data, and news articles from CryptoCompare (accessed via the CoinDesk API), performs feature engineering and data cleaning, then uses VADER and Hugging Face AI models for news sentiment scoring and merges these with OHLCV features, before running regression models (such as OLS, Ridge and GradientBoostingRegressor) to determine optimial portfolio weights. All of the above was done using Python. Finally, the data visualisations are presented in a visually appealing user interface, which was developed using React.js and deployed using Netlify.
@@ -32,6 +34,22 @@ Uniquely, this was the only course I've done which encourages use of generative 
 <img width="1275" height="770" alt="Screenshot 2025-08-12 at 14 14 12" src="https://github.com/user-attachments/assets/67d3624a-9b2c-4057-a558-770f7fd9b89b" />
 
 *img: screenshot of frontend Dashboard page showcasing all the data visualisastions*
+
+## comp6771 - Advanced C++
+
+This course taught advanced c++ practices like operator overloading, iterators, dynamic polymorphism, memory management, templates and metaprogramming.
+
+### ass3
+
+An assignment to implement a directed graph templated class from scratch. This class allows for the construction and management of graphs, graph nodes and edges, and edges can be weighted or unweighted whilst inheriting virtual methods from its parent class. The graph also includes a graph iterator class to iterate over the edges in the graph, in the order in which edges are added (rather than using Dijkstra's algorithm or other graph traversal method). A lot of unit tests were also expected to be written to test the behaviour of this class.
+
+This assignment focuses on the use of smart pointers, dynamic polymorphism and templates to save on memory, for dynamic, generic programming.
+
+### ass2
+
+An assignment to implement a filtered string view class from scratch. This class allows for the construction and management of a string view that also stores a predicate for filtering the inner string. The view also includes an iterator class to iterate over the characters in the filtered string. A lot of unit tests were also expected to be written to test the behaviour of this class.
+
+This assignment focuses on the use of exception handling, operator overloading and iterator management for static yet robust programming.
 
 ## seng3011 - Software DevOps Workshop
 
