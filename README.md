@@ -7,7 +7,7 @@ https://aidantze.github.io/
 
 I will list all projects, and provide a brief description for each, below (sorted by most recent project or uni course):
 
-Last updated: 12/8/25
+> Last updated: 12/8/25
 
 ## fins3645 - Crypto Market Data Design and Analysis
 
@@ -18,6 +18,7 @@ This individual project involved the creation of **_Tilt.ai_**, a crypto investm
 Uniquely, this was the only course I've done which encourages use of generative AI as a data analytics and frontend development assistant. The course emphasised the importance of prompt engineering to prevent hallucinations from the LLMs. It was not exclusively to generate all parts of the project, but its uses has been acknowledged in the project report.
 
 Access the working frontend: https://eloquent-sprinkles-0ad32e.netlify.app/
+
 Access the project github repo: https://github.com/aidantze/tilt.ai
 
 Evidence... [TBA]
