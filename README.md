@@ -24,7 +24,7 @@ My role in the project was very substantial. I configured all of the github repo
 - Deployed backend: https://keytrend-api.onrender.com
 - Swagger OpenAPI documentation: https://app.swaggerhub.com/apis-docs/aidan-bbf/KeyTrend/1.0.0#/
 
-Note that the links above may not work if the services have been depreciated.
+Note: services have been suspended to minimise costs. See images below for evidence.
 
 ### SENG3011_H17A_OMEGA-nodeapp
 
@@ -133,12 +133,18 @@ Report which analyses different search algorithms, including heuristic path sear
 Uses constraint satisfaction to play a modified game of Hashiwokakero: placement of bridges between adjacent islands which must satisfy the number on the island. The algorithm uses forward checking and combinatorics to try all possible combinations of bridge placements at any given island before moving to the next island, and checks if all constraints are satisfied before terminating. 
 
 Different characters correspond to a different number of bridges between island numbers, and no bridge can cross over another bridge:
-**\-** 1 horizontal bridge
-**=** 2 horizontal bridges
-**E** 3 horizontal bridges
-**|** 1 vertical bridge
-**"** 2 vertical bridges
-**\#** 3 vertical bridges
+
+| Symbol   | Description                          |
+| -------- | ------------------------------------ |
+| **\-**   | 1 horizontal bridge                  |
+| **=**    | 2 horizontal bridges                 |
+| **E**    | 3 horizontal bridges                 |
+| **\|**   | 1 vertical bridge                    |
+| **"**    | 2 vertical bridges                   |
+| **\#**   | 3 vertical bridges                   |
+| **a**    | island requiring 10 adjacent bridges |
+| **b**    | island requiring 11 adjacent bridges |
+| **c**    | island requiring 12 adjacent bridges |
 
 <img width="285" alt="Screen Shot 2024-03-15 at 12 52 46" src="https://github.com/aidantze/projects.github.io/assets/122945487/8b12ee28-64b5-45f2-a36e-9d847cbd1b9b">
 
