@@ -11,15 +11,15 @@ I will list all projects, and provide a brief description for each, below (sorte
 
 ## fins3645 - Crypto Market Data Design and Analysis
 
-This course was an entire workshop focusing on data analytics for financial markets, specifically, cryptocurrency markets. All concepts taught in the course revolve around 
+This course was an entire workshop focusing on the 4 stages of the Data Factory Floor, for data analytics for financial markets, specifically, cryptocurrency markets.
 
-This individual project involved the creation of **_Tilt.ai_**, a crypto investment trading platform to visualise the results of data analysis of crypto markets. The service retrieves both daily OHLCV (open, high, low, close, volume) price data, and news articles from CryptoCompare (accessed via the CoinDesk API), performs feature engineering and data cleaning, then uses VADER and Hugging Face AI models for news sentiment scoring and merges these with OHLCV features, before running regression analysis to determine optimial portfolio weights. All of the above was done using Python. Finally, the data visualisations are presented in a visually appealing user interface, which was developed using React.js and deployed using Netlify.
+This individual project involved the creation of **_Tilt.ai_**, a crypto investment trading platform to visualise the results of data analysis of crypto markets. The service retrieves both daily OHLCV (open, high, low, close, volume) price data, and news articles from CryptoCompare (accessed via the CoinDesk API), performs feature engineering and data cleaning, then uses VADER and Hugging Face AI models for news sentiment scoring and merges these with OHLCV features, before running regression models (such as OLS, Ridge and GradientBoostingRegressor) to determine optimial portfolio weights. All of the above was done using Python. Finally, the data visualisations are presented in a visually appealing user interface, which was developed using React.js and deployed using Netlify.
 
 Uniquely, this was the only course I've done which encourages use of generative AI as a data analytics and frontend development assistant. The course emphasised the importance of prompt engineering to prevent hallucinations from the LLMs. It was not exclusively to generate all parts of the project, but its uses has been acknowledged in the project report.
 
-Access the working frontend: https://eloquent-sprinkles-0ad32e.netlify.app/
-
-Access the project github repo: https://github.com/aidantze/tilt.ai
+**Links**
+- [Deployed frontend](https://eloquent-sprinkles-0ad32e.netlify.app/)
+- [Project github repo](https://github.com/aidantze/tilt.ai)
 
 Evidence... [TBA]
 
@@ -34,9 +34,9 @@ I led a 5-member software team where the group built **_KeyTrend_**, a news keyw
 My role in the project was very substantial. I configured all of the github repo's ci/cd pipeline, deployed to Render, build the service's Swagger documentation and managed all Jira tasks, plus a few backend routes and frontend service layer integrations.
 
 **Links**
-- Deployed frontend: https://keytrend.onrender.com
-- Deployed backend: https://keytrend-api.onrender.com
-- Swagger OpenAPI documentation: https://app.swaggerhub.com/apis-docs/aidan-bbf/KeyTrend/1.0.0#/
+- [Deployed frontend](https://keytrend.onrender.com)
+- [Deployed backend](https://keytrend-api.onrender.com)
+- [Swagger OpenAPI documentation](https://app.swaggerhub.com/apis-docs/aidan-bbf/KeyTrend/1.0.0#/)
 
 Note: services have been suspended to minimise costs. See images below for evidence.
 
@@ -116,7 +116,7 @@ Created a RESTful API which extracts relevant data from the Deutsche Bahn (Germa
 
 This Data Service stores all data in an SQLite database, querying when necessary.
 
-You can find the github repo for this project [here](https://github.com/aidantze/deutsche-bahn). Below are screenshots as evidence.
+Access the github repo for this project [here](https://github.com/aidantze/deutsche-bahn).
 
 <img width="688" alt="Screen Shot 2024-06-01 at 21 15 28" src="https://github.com/aidantze/projects.github.io/assets/122945487/56bec5f5-c437-47fd-a7fc-c9588c4186b5">
 
