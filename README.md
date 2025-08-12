@@ -39,13 +39,13 @@ Uniquely, this was the only course I've done which encourages use of generative 
 
 This course taught advanced c++ practices like operator overloading, iterators, dynamic polymorphism, memory management, templates and metaprogramming.
 
-### ass3
+### ass3 - General Directed Weighted Graph
 
-An assignment to implement a directed graph templated class from scratch. This class allows for the construction and management of graphs, graph nodes and edges, and edges can be weighted or unweighted whilst inheriting virtual methods from its parent class. The graph also includes a graph iterator class to iterate over the edges in the graph, in the order in which edges are added (rather than using Dijkstra's algorithm or other graph traversal method). A lot of unit tests were also expected to be written to test the behaviour of this class.
+An assignment to implement a directed weighted graph templated class from scratch. This class allows for the construction and management of graphs, graph nodes and edges, and edges can be weighted or unweighted whilst inheriting virtual methods from its parent class. The graph also includes a graph iterator class to iterate over the edges in the graph, in the order in which edges are added (rather than using Dijkstra's algorithm or other graph traversal method). A lot of unit tests were also expected to be written to test the behaviour of this class.
 
 This assignment focuses on the use of smart pointers, dynamic polymorphism and templates to save on memory, for dynamic, generic programming.
 
-### ass2
+### ass2 - Filtered String View
 
 An assignment to implement a filtered string view class from scratch. This class allows for the construction and management of a string view that also stores a predicate for filtering the inner string. The view also includes an iterator class to iterate over the characters in the filtered string. A lot of unit tests were also expected to be written to test the behaviour of this class.
 
