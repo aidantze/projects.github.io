@@ -7,7 +7,20 @@ https://aidantze.github.io/
 
 I will list all projects, and provide a brief description for each, below (sorted by most recent project or uni course):
 
-Last updated: 1/5/25
+Last updated: 12/8/25
+
+## fins3645 - Crypto Market Data Design and Analysis
+
+This course was an entire workshop focusing on data analytics for financial markets, specifically, cryptocurrency markets. All concepts taught in the course revolve around 
+
+This individual project involved the creation of **_Tilt.ai_**, a crypto investment trading platform to visualise the results of data analysis of crypto markets. The service retrieves both daily OHLCV (open, high, low, close, volume) price data, and news articles from CryptoCompare (accessed via the CoinDesk API), performs feature engineering and data cleaning, then uses VADER and Hugging Face AI models for news sentiment scoring and merges these with OHLCV features, before running regression analysis to determine optimial portfolio weights. All of the above was done using Python. Finally, the data visualisations are presented in a visually appealing user interface, which was developed using React.js and deployed using Netlify.
+
+Uniquely, this was the only course I've done which encourages use of generative AI as a data analytics and frontend development assistant. The course emphasised the importance of prompt engineering to prevent hallucinations from the LLMs. It was not exclusively to generate all parts of the project, but its uses has been acknowledged in the project report.
+
+Access the working frontend: https://eloquent-sprinkles-0ad32e.netlify.app/
+Access the project github repo: https://github.com/aidantze/tilt.ai
+
+Evidence... [TBA]
 
 ## seng3011 - Software DevOps Workshop
 
