@@ -102,6 +102,8 @@ Created a RESTful API which extracts relevant data from the Deutsche Bahn (Germa
 
 This Data Service stores all data in an SQLite database, querying when necessary.
 
+You can find the github repo for this project [here](https://github.com/aidantze/deutsche-bahn). Below are screenshots as evidence.
+
 <img width="688" alt="Screen Shot 2024-06-01 at 21 15 28" src="https://github.com/aidantze/projects.github.io/assets/122945487/56bec5f5-c437-47fd-a7fc-c9588c4186b5">
 
 *img: code screenshot of update stop endpoint*
