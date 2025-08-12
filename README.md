@@ -21,7 +21,17 @@ Uniquely, this was the only course I've done which encourages use of generative 
 - [Deployed frontend](https://eloquent-sprinkles-0ad32e.netlify.app/)
 - [Project github repo](https://github.com/aidantze/tilt.ai)
 
-Evidence... [TBA]
+<img width="740" height="542" alt="Screenshot 2025-08-12 at 14 12 18" src="https://github.com/user-attachments/assets/f3323f9a-8f0a-4f42-9a8a-59517de4056f" />
+
+*img: screenshot of code which passes text into Hugging Face for sentiment scoring*
+
+<img width="1303" height="807" alt="Screenshot 2025-08-12 at 14 14 30" src="https://github.com/user-attachments/assets/3a8228b3-fd22-4b03-8bac-912c6ab409ed" />
+
+*img: screenshot of frontend Dashboard page showcasing all the data visualisastions*
+
+<img width="1275" height="770" alt="Screenshot 2025-08-12 at 14 14 12" src="https://github.com/user-attachments/assets/67d3624a-9b2c-4057-a558-770f7fd9b89b" />
+
+*img: screenshot of frontend Home Page where users would first land*
 
 ## seng3011 - Software DevOps Workshop
 
