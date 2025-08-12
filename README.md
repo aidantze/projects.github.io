@@ -27,11 +27,11 @@ Uniquely, this was the only course I've done which encourages use of generative 
 
 <img width="1303" height="807" alt="Screenshot 2025-08-12 at 14 14 30" src="https://github.com/user-attachments/assets/3a8228b3-fd22-4b03-8bac-912c6ab409ed" />
 
-*img: screenshot of frontend Dashboard page showcasing all the data visualisastions*
+*img: screenshot of frontend Home Page where users would first land*
 
 <img width="1275" height="770" alt="Screenshot 2025-08-12 at 14 14 12" src="https://github.com/user-attachments/assets/67d3624a-9b2c-4057-a558-770f7fd9b89b" />
 
-*img: screenshot of frontend Home Page where users would first land*
+*img: screenshot of frontend Dashboard page showcasing all the data visualisastions*
 
 ## seng3011 - Software DevOps Workshop
 
