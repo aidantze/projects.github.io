@@ -1,13 +1,13 @@
 # projects.github.io
 Welcome to my personal project portfolio! Here you will find a range of all the relevant programming projects I have done over the course of my uni degree (at UNSW). This is not to say that these were the only projects I did. Rather, these were all the most relevant, high-scoring projects. 
 
-I have attempted in the past to create my own portfolio website from scratch. However, it has not been updated recently. It remains undeveloped, due to the fact that I want to recreate it using industry grade tools (such as React, Bootstrap and AWS deployment), but feel free to see my first attempt at frontend programming!
+I have attempted in the past to create my own portfolio website from scratch. It was initially made using raw HTML/CSS in 2023, but was revamped completely in 2025 using React.js and tailwind.css. 
 
-https://aidantze.github.io/
+[See my portfolio website here](https://aidantze.netlify.app/)
 
 I will list all projects, and provide a brief description for each, below (sorted by most recent project or uni course):
 
-> Last updated: 12/8/25
+> Last updated: 18/8/25
 
 ## fins3645 - Crypto Market Data Design and Analysis
 
