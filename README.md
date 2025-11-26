@@ -7,7 +7,7 @@ I have attempted in the past to create my own portfolio website from scratch. It
 
 I will list all projects, and provide a brief description for each, below (sorted by most recent project or uni course):
 
-> Last updated: 18/8/25
+> Last updated: 26/11/25
 
 ## YarnLink - Indigenous Mental Health Chatbot
 
