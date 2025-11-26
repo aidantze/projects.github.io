@@ -11,7 +11,8 @@ I will list all projects, and provide a brief description for each, below (sorte
 
 ## YarnLink - Indigenous Mental Health Chatbot
 
-*Society Competition Showcase Prototype*
+> [!IMPORTANT]
+> Society Competition Showcase Prototype
 
 This group project involved collaborating in a 3-member team to produce **_YarnLink_**, a mental health chatbot designed for Indigenous Australians. This was made in response to the shocking statistic that one in three (30%) Indigenous Australian adults experienced high or very high psychological distress in 2022–23. 
 
