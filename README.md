@@ -12,11 +12,14 @@ I will list all projects, and provide a brief description for each, below (sorte
 ## YarnLink - Indigenous Mental Health Chatbot
 
 > [!IMPORTANT]
-> Society Competition Showcase Prototype
+> This project was featured in a Society Competition Showcase!
+
+> [!NOTE]
+> This project is a group collaboration!
 
 This group project involved collaborating in a 3-member team to produce **_YarnLink_**, a mental health chatbot designed for Indigenous Australians. This was made in response to the shocking statistic that one in three (30%) Indigenous Australian adults experienced high or very high psychological distress in 2022–23. 
 
-The website sends requests passed in as prompts to a backend API, where the Gemini API (ideally commercially this would be its own generative AI model specially trained for this purpose) generates responses to the prompt it is given. Each message is prepended with a crucially important protocol string that contextualises the model for every input, allowing it to handle mlicious or abusive text, and answer all prompts calmly with a dreamtime storytelling mindset (hence the word yarn), in order to appropriately assist in providing mental health advice and solutions to Indigenous Australians using the product. The response is then sent back to the website to display to the user. 
+My contribution was in the technical feasibility and architecture sections of the showcase presentation, but more significantly the creation of this prototype. This website sends requests passed in as prompts to a backend API, where the Gemini API (ideally commercially this would be its own generative AI model specially trained for this purpose) generates responses to the prompt it is given. Each message is prepended with a crucially important protocol string that contextualises the model for every input, allowing it to handle mlicious or abusive text, and answer all prompts calmly with a dreamtime storytelling mindset (hence the word yarn), in order to appropriately assist in providing mental health advice and solutions to Indigenous Australians using the product. The response is then sent back to the website to display to the user. 
 
 Quite impressively, the entire application, both the API and the website, was put together within 1 day! It was deployed on Railway for the duration of the competition showcase, but due to the 30 day free trial, has been suspended to minimise costs. The GitHub repos can still be accessed below.
 
@@ -34,7 +37,8 @@ Quite impressively, the entire application, both the API and the website, was pu
 
 ## fins3645 - Crypto Market Data Design and Analysis
 
-*Industry-relevant project*
+> [!IMPORTANT]
+> This project is very relevant for industry work! Specifically in data analytics.
 
 This course was an entire workshop focusing on the 4 stages of the Data Factory Floor, for data analytics for financial markets, specifically, cryptocurrency markets.
 
@@ -76,7 +80,8 @@ This assignment focuses on the use of exception handling, operator overloading a
 
 ## seng3011 - Software DevOps Workshop
 
-*Industry-relevant project*
+> [!IMPORTANT]
+> This project is very relevant for industry work! Specifically in software engineering
 
 This course was an entire workshop focusing on DevOps practices, such as continuous integration, delivery and deployment, containerisation, testing practices, and site reliability monitoring/observability. 
 
@@ -93,7 +98,8 @@ My role in the project was very substantial. I configured all of the github repo
 
 ### SENG3011_H17A_OMEGA-nodeapp
 
-*Group Project*
+> [!NOTE]
+> This project is a group collaboration!
 
 Microservice API built using express.js. Connects to MongoDB Atlas instance which stores news articles and fetches them in real-time (approx. once a day). This API was managed using GitHub, with a ci/cd pipeline that performs status checks and generates test and coverage reports with AI summaries to inform developers which files are not covered or which tests are failing. It was deployed using Render, with GitHub actions that automatically push code to Render, and Swagger OpenAPI documentation configured for the deployed environment. 
 
@@ -115,7 +121,8 @@ The microservice API was also used by 3 other groups in the course, making it ro
 
 ### SENG3011_H17A_OMEGA-web-app
 
-*Group Project*
+> [!NOTE]
+> This project is a group collaboration!
 
 Web service for users to fetch articles, extract keywords from articles, visualise keyword usage in articles over time on a live graph, and keep up with keyword trends. This service was built using React.js, with axios library used to manage the service layer, which calls the backend. The service was managed, documented and deployed using the same industry-grade tools as the microservice API. 
 
@@ -155,7 +162,8 @@ This machine learning assignment does 2 things:
 
 ### ass2 - RESTful API
 
-*One of my favourite assignments I've ever done!*
+> [!NOTE]
+> This project is one of my most favourite assignments I've ever done!
 
 Created a RESTful API which extracts relevant data from the Deutsche Bahn (German high speed train network) database and uses Google Gemini to create a tourism guide. The API contains the following features, all polished with endpoints and swaggerdoc adhering to RESTful API Design guidelines:
 - Create and edit stops
@@ -220,7 +228,8 @@ Different characters correspond to a different number of bridges between island 
 
 ### project2 - Event Study
 
-*Group Project*
+> [!NOTE]
+> This project is a group collaboration!
 
 A project that performed some introductory data manipulation using pandas, before using the data to analyse whether total volatility has any effect on a long-short portfolio consisting of top-performing NYSE stocks. The event study was deliberately made unclear for us to figure out the null hypothesis for ourselves. 
 
@@ -229,7 +238,8 @@ A project that performed some introductory data manipulation using pandas, befor
 
 ### assignment-ii - Dungeon-crawler game
 
-*Pair Project*
+> [!NOTE]
+> This project is a pair collaboration!
 
 Improves upon the current dungeon-crawler game by implementing new features. My partner worked on a logic gates feature. Meanwhile I worked on the snakes feature, which is a new enemy with complex behaviour, and evolution of requirements, which involved creating goals for takedown of enemies. In addition I did the majority of the open refactoring section, and contributed to both individual and pair blogging. The focus of this assignment was on design patterns and refactoring in Java. 
 
@@ -247,7 +257,8 @@ Simulates the orbit of satellites around Jupiter using basic object-oriented pro
 
 ## seng2021 - Software Requirements and Design Workshop
 
-*Industry-relevant project*
+> [!IMPORTANT]
+> This project is very relevant for industry work! Specifically in software engineering
 
 This course was an entire workshop focusing on requirements and design in API development. 
 
@@ -255,13 +266,15 @@ I led a 5-member software team, where the group built **_ei-ei_**, an e-invoicin
 
 ### se2021-23t1-einvoicing-api-h10a-brownie-storage-api
 
-*Group Project*
+> [!NOTE]
+> This project is a group collaboration!
 
 API which uses PostgreSQL to store relevant e-invoicing data in a storage API. This API was managed using GitHub, documented on Swagger and deployed using AWS Elastic Beanstalk. The storage API was the most popular in terms of usage by other groups in the course, compared to other storage APIs.
 
 ### se2021-23t1-einvoicing-frontend-h10a-brownie-storage-api
 
-*Group Project*
+> [!NOTE]
+> This project is a group collaboration!
 
 Web service for users to create, manage and send invoices to other users easily and securely. The focus of the web service was on accessibility for visually impaired users (inspired by a true story of a blind accountant). The web services was also managed, documented and deployed using the same industry-grade services as the storage API. My main contribution was in design and development of the frontend, as well as pitching our services to a live panel of stakeholders.
 
