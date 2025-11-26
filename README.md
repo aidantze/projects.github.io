@@ -1,13 +1,35 @@
 # projects.github.io
 Welcome to my personal project portfolio! Here you will find a range of all the relevant programming projects I have done over the course of my uni degree (at UNSW). This is not to say that these were the only projects I did. Rather, these were all the most relevant, high-scoring projects. 
 
-I have attempted in the past to create my own portfolio website from scratch. It was initially made using raw HTML/CSS in 2023, but was revamped completely in 2025 using React.js and tailwind.css. 
+I have attempted in the past to create my own portfolio website from scratch. It was initially made using raw HTML/CSS in 2023, but was revamped completely in 2025 using React.js and tailwind.css.
 
 [See my portfolio website here](https://aidantze.netlify.app/)
 
 I will list all projects, and provide a brief description for each, below (sorted by most recent project or uni course):
 
 > Last updated: 18/8/25
+
+## YarnLink - Indigenous Mental Health Chatbot
+
+*Society Competition Showcase Prototype*
+
+This group project involved collaborating in a 3-member team to produce **_YarnLink_**, a mental health chatbot designed for Indigenous Australians. This was made in response to the shocking statistic that one in three (30%) Indigenous Australian adults experienced high or very high psychological distress in 2022–23. 
+
+The website sends requests passed in as prompts to a backend API, where the Gemini API (ideally commercially this would be its own generative AI model specially trained for this purpose) generates responses to the prompt it is given. Each message is prepended with a crucially important protocol string that contextualises the model for every input, allowing it to handle mlicious or abusive text, and answer all prompts calmly with a dreamtime storytelling mindset (hence the word yarn), in order to appropriately assist in providing mental health advice and solutions to Indigenous Australians using the product. The response is then sent back to the website to display to the user. 
+
+Quite impressively, the entire application, both the API and the website, was put together within 1 day! It was deployed on Railway for the duration of the competition showcase, but due to the 30 day free trial, has been suspended to minimise costs. The GitHub repos can still be accessed below.
+
+**Links**
+- [Frontend github repo](https://github.com/aidantze/The-Quiet-Billabong)
+- [Backend github repo](https://github.com/aidantze/algonova)
+
+<img width="1512" height="822" alt="Screenshot 2025-11-26 at 21 32 59" src="https://github.com/user-attachments/assets/9ca13dcb-8477-4a81-989f-76fc13dd775e" />
+
+*img: main page website design for YarnLink*
+
+<img width="1512" height="822" alt="Screenshot 2025-11-26 at 21 35 00" src="https://github.com/user-attachments/assets/460537a9-2963-4158-8b26-3eae7a27ac38" />
+
+*img: sample response displayed in the website from the backend API*
 
 ## fins3645 - Crypto Market Data Design and Analysis
 
