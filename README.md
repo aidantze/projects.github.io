@@ -1,13 +1,37 @@
 # projects.github.io
-Welcome to my personal project portfolio! Here you will find a range of all the relevant programming projects I have done over the course of my uni degree (at UNSW). This is not to say that these were the only projects I did. Rather, these were all the most relevant, high-scoring projects. 
+Welcome to my personal project portfolio! Here you will find a range of all the relevant programming projects I have done over the course of my uni degree (at UNSW). This is not to say that these were the only projects I did. Rather, these were all the most industry-relevant, high-scoring projects.
 
-I have attempted in the past to create my own portfolio website from scratch. It was initially made using raw HTML/CSS in 2023, but was revamped completely in 2025 using React.js and tailwind.css.
-
-[See my portfolio website here](https://aidantze.netlify.app/)
+Also [check out my portfolio website!](https://aidantze.netlify.app/) It was initially made using raw HTML/CSS in 2023, but was revamped completely in 2025 using React.js and tailwind.css.
 
 I will list all projects, and provide a brief description for each, below (sorted by most recent project or uni course):
 
-> Last updated: 26/11/25
+> Last updated: 25/12/25
+
+---
+
+## comp9517 — Computer Vision Workshop
+
+> [!IMPORTANT]
+> This project is very relevant for industry work! Specifically in Artificial Intelligence
+
+> [!NOTE]
+> This project is a group collaboration!
+
+This group project involved collaborating in a 5-member deep learning computer vision analytics team to produce **_Agropest_** (formerly _pesta-la-vista_), an investigation into the use of image classification and object detection for pest control in agriculture. The study involved extensive research and testing, as well as a presentation and a report which involved a formal literature review, methods and discussion. Regarding the codebase, it involved all 5 members taking their own exploratory pathways which analyse the effectiveness of two deep learning strategies: YOLOv8 with mosaic augumentation, and R-CNN with Bag-Of-Words segmentation.
+
+My contribution was in analysing how the YOLO model performs against different forms of noise and resolutions (data augumentations), which in practice allows for more robust performance against corrupted images. Google Colab was used to run the code with advanced GPUs. The conclusion from the study saw an image size of 256x256 was most optimal for the model, and struggles the most against salt and pepper noise. My contribution also involved setting up some basic performance metrics to analyse the effectiveness of the model, such as Mean Average Precision (mAP) and Intersection over Union (IoU). Others in the group investigated fine tuning hyperparameters and doing mosaic analysis, a different aspect of data augumentation, and these results were combined to determine the most optimal, robust parameters for the model in classifying and detecting pests.
+
+I learnt what it means to have a "good" model that can classify and detect various objects in images, and why it's so important to have such a robust model which can handle various forms of augumentation that represents possible anomalies in the real world. 
+
+<img width="817" height="716" alt="Screenshot 2025-12-25 at 19 10 33" src="https://github.com/user-attachments/assets/fa87d849-1234-47fd-9ddd-0a7c7a04d9ae" />
+
+*img: screenshot of code that I wrote which analyses the effectiveness of YOLO against different types of noise and filters*
+
+<img width="1180" height="664" alt="Screenshot 2025-12-25 at 19 13 35" src="https://github.com/user-attachments/assets/352db123-0db9-4184-bb60-6bbe669a3e20" />
+
+*img: powerpoint slide summarising the key results of the YOLO model, specifically noise and resolution augumentation results*
+
+---
 
 ## YarnLink - Indigenous Mental Health Chatbot
 
@@ -17,7 +41,7 @@ I will list all projects, and provide a brief description for each, below (sorte
 > [!NOTE]
 > This project is a group collaboration!
 
-This group project involved collaborating in a 3-member team to produce **_YarnLink_**, a mental health chatbot designed for Indigenous Australians. This was made in response to the shocking statistic that one in three (30%) Indigenous Australian adults experienced high or very high psychological distress in 2022–23. 
+This group project involved collaborating in a 3-member team to produce **_YarnLink_** (formerly _Algonova_), a mental health chatbot designed for Indigenous Australians. This was made in response to the shocking statistic that one in three (30%) Indigenous Australian adults experienced high or very high psychological distress in 2022–23. 
 
 My contribution was in the technical feasibility and architecture sections of the showcase presentation, but more significantly the creation of this prototype. This website sends requests passed in as prompts to a backend API, where the Gemini API (ideally commercially this would be its own generative AI model specially trained for this purpose) generates responses to the prompt it is given. Each message is prepended with a crucially important protocol string that contextualises the model for every input, allowing it to handle mlicious or abusive text, and answer all prompts calmly with a dreamtime storytelling mindset (hence the word yarn), in order to appropriately assist in providing mental health advice and solutions to Indigenous Australians using the product. The response is then sent back to the website to display to the user. 
 
