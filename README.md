@@ -23,6 +23,9 @@ My contribution was in analysing how the YOLO model performs against different f
 
 I learnt what it means to have a "good" model that can classify and detect various objects in images, and why it's so important to have such a robust model which can handle various forms of augumentation that represents possible anomalies in the real world. 
 
+**Links**
+- [Investigation github repo](https://github.com/aidantze/pesta-la-vista/)
+
 <img width="817" height="716" alt="Screenshot 2025-12-25 at 19 10 33" src="https://github.com/user-attachments/assets/fa87d849-1234-47fd-9ddd-0a7c7a04d9ae" />
 
 *img: screenshot of code that I wrote which analyses the effectiveness of YOLO against different types of noise and filters*
@@ -30,8 +33,6 @@ I learnt what it means to have a "good" model that can classify and detect vario
 <img width="1180" height="664" alt="Screenshot 2025-12-25 at 19 13 35" src="https://github.com/user-attachments/assets/352db123-0db9-4184-bb60-6bbe669a3e20" />
 
 *img: powerpoint slide summarising the key results of the YOLO model, specifically noise and resolution augumentation results*
-
----
 
 ## YarnLink - Indigenous Mental Health Chatbot
 
@@ -41,7 +42,7 @@ I learnt what it means to have a "good" model that can classify and detect vario
 > [!NOTE]
 > This project is a group collaboration!
 
-This group project involved collaborating in a 3-member team to produce **_YarnLink_** (formerly _Algonova_), a mental health chatbot designed for Indigenous Australians. This was made in response to the shocking statistic that one in three (30%) Indigenous Australian adults experienced high or very high psychological distress in 2022–23. 
+This group project involved collaborating in a 3-member team to produce **_YarnLink_** (formerly _The Quiet Billabong_), a mental health chatbot designed for Indigenous Australians. This was made in response to the shocking statistic that one in three (30%) Indigenous Australian adults experienced high or very high psychological distress in 2022–23. 
 
 My contribution was in the technical feasibility and architecture sections of the showcase presentation, but more significantly the creation of this prototype. This website sends requests passed in as prompts to a backend API, where the Gemini API (ideally commercially this would be its own generative AI model specially trained for this purpose) generates responses to the prompt it is given. Each message is prepended with a crucially important protocol string that contextualises the model for every input, allowing it to handle mlicious or abusive text, and answer all prompts calmly with a dreamtime storytelling mindset (hence the word yarn), in order to appropriately assist in providing mental health advice and solutions to Indigenous Australians using the product. The response is then sent back to the website to display to the user. 
 
@@ -199,6 +200,7 @@ Created a RESTful API which extracts relevant data from the Deutsche Bahn (Germa
 
 This Data Service stores all data in an SQLite database, querying when necessary.
 
+**Links**
 Access the github repo for this project [here](https://github.com/aidantze/deutsche-bahn).
 
 <img width="688" alt="Screen Shot 2024-06-01 at 21 15 28" src="https://github.com/aidantze/projects.github.io/assets/122945487/56bec5f5-c437-47fd-a7fc-c9588c4186b5">
