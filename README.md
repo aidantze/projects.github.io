@@ -21,10 +21,10 @@ This group project involved collaborating in a 5-member deep learning computer v
 
 My contribution was in analysing how the YOLO model performs against different forms of noise and resolutions (data augumentations), which in practice allows for more robust performance against corrupted images. Google Colab was used to run the code with advanced GPUs. The conclusion from the study saw an image size of 256x256 was most optimal for the model, and struggles the most against salt and pepper noise. My contribution also involved setting up some basic performance metrics to analyse the effectiveness of the model, such as Mean Average Precision (mAP) and Intersection over Union (IoU). Others in the group investigated fine tuning hyperparameters and doing mosaic analysis, a different aspect of data augumentation, and these results were combined to determine the most optimal, robust parameters for the model in classifying and detecting pests.
 
-I learnt what it means to have a "good" model that can classify and detect various objects in images, and why it's so important to have such a robust model which can handle various forms of augumentation that represents possible anomalies in the real world. 
+I learnt what it means to have a "good" model that can classify and detect various objects in images, and why it's so important to have such a robust model which can handle various forms of augumentation that represents possible anomalies in the real world.
 
 **Links**
-- [Investigation github repo](https://github.com/aidantze/pesta-la-vista/)
+- [AgroPest github repo](https://github.com/aidantze/pesta-la-vista/)
 
 <img width="817" height="716" alt="Screenshot 2025-12-25 at 19 10 33" src="https://github.com/user-attachments/assets/fa87d849-1234-47fd-9ddd-0a7c7a04d9ae" />
 
@@ -44,13 +44,13 @@ I learnt what it means to have a "good" model that can classify and detect vario
 
 This group project involved collaborating in a 3-member team to produce **_YarnLink_** (formerly _The Quiet Billabong_), a mental health chatbot designed for Indigenous Australians. This was made in response to the shocking statistic that one in three (30%) Indigenous Australian adults experienced high or very high psychological distress in 2022–23. 
 
-My contribution was in the technical feasibility and architecture sections of the showcase presentation, but more significantly the creation of this prototype. This website sends requests passed in as prompts to a backend API, where the Gemini API (ideally commercially this would be its own generative AI model specially trained for this purpose) generates responses to the prompt it is given. Each message is prepended with a crucially important protocol string that contextualises the model for every input, allowing it to handle mlicious or abusive text, and answer all prompts calmly with a dreamtime storytelling mindset (hence the word yarn), in order to appropriately assist in providing mental health advice and solutions to Indigenous Australians using the product. The response is then sent back to the website to display to the user. 
+My contribution was in the technical feasibility and architecture sections of the showcase presentation, but more significantly the creation of this prototype. This website sends requests passed in as prompts to _Algonova_ (a backend API), where the Gemini API (ideally commercially this would be its own generative AI model specially trained for this purpose) generates responses to the prompt it is given. Each message is prepended with a crucially important protocol string that contextualises the model for every input, allowing it to handle malicious or abusive text, and answer all prompts calmly with a dreamtime storytelling mindset (hence the word yarn), in order to appropriately assist in providing mental health advice and solutions to Indigenous Australians using the product. The response is then sent back to the website to display to the user.
 
-Quite impressively, the entire application, both the API and the website, was put together within 1 day! It was deployed on Railway for the duration of the competition showcase, but due to the 30 day free trial, has been suspended to minimise costs. The GitHub repos can still be accessed below.
+Quite impressively, the entire application, both the API and the website, was put together within 1 day! It was deployed on Railway for the duration of the competition showcase, but *due to the 30 day free trial, has been suspended to minimise costs.*
 
 **Links**
-- [Frontend github repo](https://github.com/aidantze/The-Quiet-Billabong)
-- [Backend github repo](https://github.com/aidantze/algonova)
+- [YarnLink frontend github repo](https://github.com/aidantze/The-Quiet-Billabong)
+- [Algonova backend github repo](https://github.com/aidantze/algonova)
 
 <img width="1512" height="822" alt="Screenshot 2025-11-26 at 21 32 59" src="https://github.com/user-attachments/assets/9ca13dcb-8477-4a81-989f-76fc13dd775e" />
 
@@ -72,8 +72,8 @@ This individual project involved the creation of **_Tilt.ai_**, a crypto investm
 Uniquely, this was the only course I've done which encourages use of generative AI as a data analytics and frontend development assistant. The course emphasised the importance of prompt engineering to prevent hallucinations from the LLMs. It was not used to generate all parts of the project, but its uses has been acknowledged in the project report.
 
 **Links**
-- [Deployed frontend](https://eloquent-sprinkles-0ad32e.netlify.app/)
-- [Project github repo](https://github.com/aidantze/tilt.ai)
+- [Tilt.ai deployed frontend](https://eloquent-sprinkles-0ad32e.netlify.app/)
+- [Tilt.ai project github repo](https://github.com/aidantze/tilt.ai)
 
 <img width="740" height="542" alt="Screenshot 2025-08-12 at 14 12 18" src="https://github.com/user-attachments/assets/f3323f9a-8f0a-4f42-9a8a-59517de4056f" />
 
@@ -112,14 +112,12 @@ This course was an entire workshop focusing on DevOps practices, such as continu
 
 I led a 5-member software team where the group built **_KeyTrend_**, a news keyword microservice designed to enhance news article fetching from multiple data sources, including NewsAPI and the Australian Financial Review, and use AI insights to extract relevant keywords, summarise articles and visualise keyword usage in articles over time. We had to pitch the project to a live panel of stakeholders, and demonstrate the behaviour of the deployed service.
 
-My role in the project was very substantial. I configured all of the github repo's ci/cd pipeline, deployed to Render, build the service's Swagger documentation and managed all Jira tasks, plus a few backend routes and frontend service layer integrations.
+My role in the project was very substantial. I configured all of the github repo's ci/cd pipeline, deployed to Render, build the service's Swagger documentation and managed all Jira tasks, plus a few backend routes and frontend service layer integrations. *Note that the deployed frontend and backend have been suspended to minimise costs.*
 
 **Links**
-- [Deployed frontend](https://keytrend.onrender.com)
-- [Deployed backend](https://keytrend-api.onrender.com)
+- [KeyTrend deployed frontend](https://keytrend.onrender.com)
+- [KeyTrend API backend](https://keytrend-api.onrender.com)
 - [Swagger OpenAPI documentation](https://app.swaggerhub.com/apis-docs/aidan-bbf/KeyTrend/1.0.0#/)
-
-*Note: deployed frontend and backend have been suspended to minimise costs. Instead, see images below for evidence.*
 
 ### SENG3011_H17A_OMEGA-nodeapp
 
@@ -201,7 +199,7 @@ Created a RESTful API which extracts relevant data from the Deutsche Bahn (Germa
 This Data Service stores all data in an SQLite database, querying when necessary.
 
 **Links**
-Access the github repo for this project [here](https://github.com/aidantze/deutsche-bahn).
+[deutsche-bahn github repo](https://github.com/aidantze/deutsche-bahn).
 
 <img width="688" alt="Screen Shot 2024-06-01 at 21 15 28" src="https://github.com/aidantze/projects.github.io/assets/122945487/56bec5f5-c437-47fd-a7fc-c9588c4186b5">
 
