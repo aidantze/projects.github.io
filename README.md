@@ -14,7 +14,7 @@ I will list all projects, and provide a brief description for each, below (sorte
 This course taught some fundamentals of web programming and UX design, usability, accessibility, testing and deployment. It progressed through fundamentals of web programming (HTML, CSS, Node.js) before moving into React + Vite architecutres, routing, component rendering and tailwind.css in-class styling. 
 
 <details>
-  <summary>Keywords</summary>
+  <summary>==Keywords==</summary>
   HTML5, Semantic HTML, CSS3, Flexbox, CSS Grid, Responsive Web Design, JavaScript, eslint, Document Object Model, DOM Manipulation, Event Handling, Asynchronous Programming, Promises, Async/Await, Fetch API, React.js, JSX, React Hooks, useState, useEffect, useContext, useMemo, useCallback, useRef, Custom Hooks, State Management, Context API, React Router, Client-Side Routing, Virtual DOM, Component-Based Architecture, Functional Components, Props, Tailwind CSS, Styled Components, CSS Modules, Mobile-First Design, Media Queries, Dynamic Styling, Component Testing, End-to-End Testing, Cypress, Mocking, Test-Driven Development, Deployment, Vercel, Version Control, Git, GitHub, GitLab, Webpack, Vite, Package Managers, NPM, Web Vitals, Browser Compatibility, Responsiveness, Tablet Design, Desktop Design, Mobile Design, CORS, LocalStorage, Polling, Code Reviews, Pair Programming, UX Design, Figma, Prototyping, User Flows, Information Architecture, Visual Hierarchy, Typography, Color Theory, Font Design, Interaction Design, Web Accessibility, A11y, WCAG 2.1 Compliance, ARIA Roles, Semantic Landmarks, Keyboard Navigation, Screen Reader Optimization, Focus Management, Color Contrast, Alt Text
 </details>
 
@@ -33,9 +33,10 @@ The requirements were strict in some layout components, but freedom was given fo
 - [GitHub repo](https://github.com/aidantze/presto-deploy3)
 - [Deployed frontend](https://z5360925-presto-deploy.vercel.app/)
 
+<img width="1347" height="829" alt="presto-home" src="https://github.com/user-attachments/assets/f590fb09-4193-47b1-9d1a-29b625808e01" />
 *img: screenshot of the home page for the presto application*
 
-
+<img width="1426" height="924" alt="presto-slide" src="https://github.com/user-attachments/assets/063d898d-f6d8-455d-9087-4b97161d8248" />
 *img: screenshot of the slides page for the presto application*
 
 ### qanda – Q&A forum application
@@ -46,17 +47,18 @@ The challege here was to go back to fundamentals of web frontend programming and
 
 The requirements were very strict in terms of layout, positioning and id names of elements, but freedom was given for overall UI/UX styling and other usability decisions. 
 
-
+<img width="1464" height="928" alt="qanda-dashboard" src="https://github.com/user-attachments/assets/fa116fc3-cb5b-426f-ad87-5e2fc0fe4a80" />
 *img: screenshot of the dashboard page for the qanda application*
 
+<img width="1464" height="928" alt="qanda-thread" src="https://github.com/user-attachments/assets/d48b9dfa-971f-4a96-889e-9aec7db1b25c" />
 
 *img: screenshot of the thread page for the qanda application*
 
-### exercises 8e – 2048
+### 2048 (tutorial exercise 8e)
 
-This was a tutorial exercise where we would get familiar with Node.js and React.js by making a simple game of 2048. The focus here was on useState, useEffect and useCallback, and being able to build a simple webpage in a short space of time in preparation for the final exam.
+This was a tutorial exercise where we would get familiar with Node.js and React.js by making a simple game of 2048. The focus here was on useState, useEffect and useCallback, and being able to build a simple web game in a short space of time in preparation for the final exam.
 
-
+<img width="668" height="716" alt="2048-fail" src="https://github.com/user-attachments/assets/283c3562-66fc-44fd-a448-3a1aff538d10" />
 *img: screenshot of the main page for the 2048 application*
 
 ## comp9517 — Computer Vision Workshop
@@ -68,7 +70,7 @@ This was a tutorial exercise where we would get familiar with Node.js and React.
 > This project is a group collaboration!
 
 <details>
-  <summary>Keywords</summary>
+  <summary>==Keywords==</summary>
   Computer Vision, Image Processing, Object Detection, Image Segmentation, Semantic Segmentation, Instance Segmentation, Panoptic Segmentation, Data Augmentation, Geometric Transformations, Color Space Transformations, Random Cropping, Flipping, Rotation, Translation, Shearing, Zooming, Noise Injection, Gaussian Noise, Salt-and-Pepper Noise, Image Filtering, Linear Filters, Non-linear Filters, Convolution, Kernel, Blurring, Smoothing Filters, Median Filter, Gaussian Blur, Bilateral Filter, Sharpening Filters, Edge Detection, Prewitt Operator, Laplacian of Gaussian, Morphological Operations, Erosion, Dilation, Opening, Closing, Feature Extraction, SIFT, FAST, HOG, Bag-of-Words, Visual Vocabulary, AI, Deep Learning, Machine Learning, Neural Networks, Convolutional Neural Networks, CNN, LeNet, AlexNet, ResNet, EfficientNet, Transfer Learning, Fine-Tuning, Pre-trained Models, YOLO, YOLOv8, Single Shot Detector, SSD, Faster R-CNN, Mask R-CNN, Anchor Boxes, Non-Maximum Suppression, Intersection over Union, IoU, Mean Average Precision, mAP, Boundary Box Regression, Image Classification, Pattern Recognition, Feature Matching, Depth Estimation, Optical Flow, Motion Analysis, Generative Adversarial Networks, GANs, Vision Transformers, ViT, Swin Transformer, Bounding Boxes, Segmentation Masks, Keypoint Detection, Pose Estimation, Face Recognition, Landmark Detection, Video Analysis, Action Recognition, Object Tracking, Multi-Object Tracking, OpenCV, TensorFlow, PyTorch, Keras, Scikit-image, GPU Upscaling, Real-time Processing, Image Datasets, ImageNet, MNIST, CIFAR, Performance Metrics, Accuracy, Precision, Recall, F1 Score, Confusion Matrix, Data Preprocessing, Normalization, Standardization.
 </details>
 
