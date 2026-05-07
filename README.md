@@ -9,6 +9,56 @@ I will list all projects, and provide a brief description for each, below (sorte
 
 ---
 
+## comp6080 – Web Frontend Programming
+
+This course taught some fundamentals of web programming and UX design, usability, accessibility, testing and deployment. It progressed through fundamentals of web programming (HTML, CSS, Node.js) before moving into React + Vite architecutres, routing, component rendering and tailwind.css in-class styling. 
+
+<details>
+  <summary>Keywords</summary>
+  HTML5, Semantic HTML, CSS3, Flexbox, CSS Grid, Responsive Web Design, JavaScript, eslint, Document Object Model, DOM Manipulation, Event Handling, Asynchronous Programming, Promises, Async/Await, Fetch API, React.js, JSX, React Hooks, useState, useEffect, useContext, useMemo, useCallback, useRef, Custom Hooks, State Management, Context API, React Router, Client-Side Routing, Virtual DOM, Component-Based Architecture, Functional Components, Props, Tailwind CSS, Styled Components, CSS Modules, Mobile-First Design, Media Queries, Dynamic Styling, Component Testing, End-to-End Testing, Cypress, Mocking, Test-Driven Development, Deployment, Vercel, Version Control, Git, GitHub, GitLab, Webpack, Vite, Package Managers, NPM, Web Vitals, Browser Compatibility, Responsiveness, Tablet Design, Desktop Design, Mobile Design, CORS, LocalStorage, Polling, Code Reviews, Pair Programming, UX Design, Figma, Prototyping, User Flows, Information Architecture, Visual Hierarchy, Typography, Color Theory, Font Design, Interaction Design, Web Accessibility, A11y, WCAG 2.1 Compliance, ARIA Roles, Semantic Landmarks, Keyboard Navigation, Screen Reader Optimization, Focus Management, Color Contrast, Alt Text
+</details>
+
+### presto — Slide Maker application
+
+> [!NOTE]
+> This project is a pair collaboration!
+
+This pair project involved the creation of **_presto_**, a web application similar to [slides.com](slides.com) for creation and previewing of slides and presentations. Users can create and login to their accounts, create slides, add text, image, video and code elements to the slide, move, resize, delete or edit these elemnts' properties (font, colour, image URL, etc.), and change slide background colour. Users can also edit the title and thumbnail of their presentations. Most impressively, each slide can also have a transition into it, and there's a whole revision history section to allow users to revert to a previous version of the presentation. Finally a preview button allows them to present in fullscreen.
+
+My contribution to the project was pretty much all slide page functionality, and initial routing setup, on top of overall styling with UX, usability and accessibility considerations in mind. I added page persistence via local storage management, and  modules and interfaces for typescript type safety. I also deployed the frontend to Vercel. The biggest challenge to the project was in the move/resize functionality, which kept breaking whenever a new feature was added (e.g. editing text). Meanwhile my parter worked on the login/register auth functionality, querying to the backend and deploying the backend whilst also doing preview and transitions.
+
+The requirements were strict in some layout components, but freedom was given for pretty much everything else. A separate report was also written documenting an alternative end-to-end testing route, and justifications for this route. 
+
+**Links:**
+- [GitHub repo](https://github.com/aidantze/presto-deploy3)
+- [Deployed frontend](https://z5360925-presto-deploy.vercel.app/)
+
+*img: screenshot of the home page for the presto application*
+
+
+*img: screenshot of the slides page for the presto application*
+
+### qanda – Q&A forum application
+
+This project involved the creation of **_qanda_**, a tech-themed Q&A forum application. Users can create accounts, forum threads and messages within threads. Messages are nested based on replies to other messages. They can view theirs and others' profiles and admin privileges if they are an admin.
+
+The challege here was to go back to fundamentals of web frontend programming and only use HTML, CSS and Node.js, with only some styling libraries like tailwind allowed. This means for such a single page application, the routing and state management had to be done manually. On top of this, a few challenging components in the specification were completed: Polling and infinite scroll allow threads and messages to be loaded progressively and updated live without requiring a refresh, while static feed offline access allows the most recent thread to be cached and retrieved when internet is down.
+
+The requirements were very strict in terms of layout, positioning and id names of elements, but freedom was given for overall UI/UX styling and other usability decisions. 
+
+
+*img: screenshot of the dashboard page for the qanda application*
+
+
+*img: screenshot of the thread page for the qanda application*
+
+### exercises 8e – 2048
+
+This was a tutorial exercise where we would get familiar with Node.js and React.js by making a simple game of 2048. The focus here was on useState, useEffect and useCallback, and being able to build a simple webpage in a short space of time in preparation for the final exam.
+
+
+*img: screenshot of the main page for the 2048 application*
+
 ## comp9517 — Computer Vision Workshop
 
 > [!IMPORTANT]
@@ -16,6 +66,11 @@ I will list all projects, and provide a brief description for each, below (sorte
 
 > [!NOTE]
 > This project is a group collaboration!
+
+<details>
+  <summary>Keywords</summary>
+  Computer Vision, Image Processing, Object Detection, Image Segmentation, Semantic Segmentation, Instance Segmentation, Panoptic Segmentation, Data Augmentation, Geometric Transformations, Color Space Transformations, Random Cropping, Flipping, Rotation, Translation, Shearing, Zooming, Noise Injection, Gaussian Noise, Salt-and-Pepper Noise, Image Filtering, Linear Filters, Non-linear Filters, Convolution, Kernel, Blurring, Smoothing Filters, Median Filter, Gaussian Blur, Bilateral Filter, Sharpening Filters, Edge Detection, Prewitt Operator, Laplacian of Gaussian, Morphological Operations, Erosion, Dilation, Opening, Closing, Feature Extraction, SIFT, FAST, HOG, Bag-of-Words, Visual Vocabulary, AI, Deep Learning, Machine Learning, Neural Networks, Convolutional Neural Networks, CNN, LeNet, AlexNet, ResNet, EfficientNet, Transfer Learning, Fine-Tuning, Pre-trained Models, YOLO, YOLOv8, Single Shot Detector, SSD, Faster R-CNN, Mask R-CNN, Anchor Boxes, Non-Maximum Suppression, Intersection over Union, IoU, Mean Average Precision, mAP, Boundary Box Regression, Image Classification, Pattern Recognition, Feature Matching, Depth Estimation, Optical Flow, Motion Analysis, Generative Adversarial Networks, GANs, Vision Transformers, ViT, Swin Transformer, Bounding Boxes, Segmentation Masks, Keypoint Detection, Pose Estimation, Face Recognition, Landmark Detection, Video Analysis, Action Recognition, Object Tracking, Multi-Object Tracking, OpenCV, TensorFlow, PyTorch, Keras, Scikit-image, GPU Upscaling, Real-time Processing, Image Datasets, ImageNet, MNIST, CIFAR, Performance Metrics, Accuracy, Precision, Recall, F1 Score, Confusion Matrix, Data Preprocessing, Normalization, Standardization.
+</details>
 
 This group project involved collaborating in a 5-member deep learning computer vision analytics team to produce **_Agropest_** (formerly _pesta-la-vista_), an investigation into the use of image classification and object detection for pest control in agriculture. The study involved extensive research and testing, as well as a presentation and a report which involved a formal literature review, methods and discussion. Regarding the codebase, it involved all 5 members taking their own exploratory pathways which analyse the effectiveness of two deep learning strategies: YOLOv8 with mosaic augumentation, and R-CNN with Bag-Of-Words segmentation.
 

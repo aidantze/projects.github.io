@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  font-family: 'Inter', Arial, sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  /* Prevents scroll bar from appearing during swipe transitions */
+  --color-primary: #fafcf0;
+  --color-accent: #2e404f;
+  --color-secondary: #585858;
+  --color-danger: #e52727;
+  --color-success: #118f1b;
+  --color-input: #d9d9d9;
+  --color-text: #000000;
+  --color-white: #ffffff;
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-accent {
+  background-color: var(--color-accent);
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+
+.bg-danger {
+  background-color: var(--color-danger);
+}
+
+.bg-input {
+  background-color: var(--color-input);
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+.text-danger {
+  color: var(--color-danger);
+}
+
+/* --- Button System --- */
+.btn {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 0.6rem 1.4rem; */
+  font-weight: 600;
+  /* border-radius: 6px; */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-disable {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 0.6rem 1.4rem; */
+  font-size: 1.05rem;
+  font-weight: 600;
+  border-radius: 6px;
+  border: none;
+  cursor: not-allowed;
+}
+
+/* --- Button Variants --- */
+.btn-primary {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-text);
+}
+
+.btn-secondary {
+  background-color: var(--color-primary);
+  color: var(--color-accent);
+}
+
+.btn-secondary:hover {
+  background-color: #bdbeb5;
+}
+
+.btn-tertiary {
+  background-color: transparent;
+  color: var(--color-text);
+}
+
+.btn-tertiary:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.btn-tertiary::after {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.btn-danger {
+  background-color: var(--color-danger);
+  color: var(--color-white);
+}
+
+.btn-danger:hover {
+  background-color: #b01e1e;
+}
