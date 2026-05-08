@@ -3,13 +3,11 @@ Welcome to my personal project portfolio! Here you will find a range of all the 
 
 Also [check out my portfolio website!](https://aidantze.netlify.app/) It was initially made using raw HTML/CSS in 2023, but was revamped completely in 2025 using React.js and tailwind.css.
 
-I will list all projects, and provide a brief description for each, below (noted by 
-
-Contents
-- [Software Engineering](#software-engineering)
-- [Artificial Intelligence and Data Analytics](#artificial-intelligence-and-data-analytics)
-- [Database Systems and Computer Networks](#database-systems-and-computer-networks)
-- [Advanced Programming and Design](#advanced-programming-and-design)
+I will list all projects, and provide a brief description for each, below, grouped by topic. Some have links to my deployed projects and other github repos:
+- [Software Engineering](#software-engineering) - KeyTrend devops webservice and microservice API, ei-ei software design webservice and microservice API
+- [Artificial Intelligence and Data Analytics](#artificial-intelligence-and-data-analytics) - TILT.ai cryto market sentiment analysis app, Agropest computer vision analysis report, Deutsche-Bahn RESTful API, YarnLink
+- [Database Systems and Computer Networks](#database-systems-and-computer-networks) - SockForums UDP/TCP terminal application, toolkit for finance, pokemon database project
+- [Advanced Programming and Design](#advanced-programming-and-design) - presto web app, qanda web app, General directed weighted graph, Dutch-Flag Sort formal verification, dungeon-crawler game analysis
 
 > Last updated: 8/5/26
 
@@ -22,7 +20,10 @@ Contents
 > [!IMPORTANT]
 > This project is very relevant for industry work! Specifically in software engineering
 
-
+<details>
+  <summary><mark>Keywords</mark></summary>
+  Software Engineering, DevOps, Natural Language Processing, NLP, Keyword Extraction, Information Retrieval, TextRank, Named Entity Recognition, NER, Tokenization, Lemmatization, API, RESTful API, Web Services, JSON, API Documentation, Swagger, OpenAPI, Authentication, Authorization, JWT, CORS, MongoDB, AWS DynamoDB, Document Database, MongoDB Atlas, Query Optimization, AWS, Amazon Web Services, EC2, ECR, ECS, S3, Lambda, API Gateway, Cloud Computing, Serverless, Infrastructure as Code, Terraform, Render, Render Deployment, Web Service Hosting, Managed Databases, SaaS, Observability, Monitoring, Logging, Tracing, Metrics, CloudWatch, OpenTelemetry, Error Tracking, Performance Monitoring, Health Checks, GitHub, Version Control, Git, Repository Management, Pull Requests, Code Reviews, GitHub Actions, CI/CD, Continuous Integration, Continuous Deployment, Automated Testing, Pipeline Orchestration, Deployment Pipelines, Frontend, User Interface, UI, Frontend Integration, API Consumption, State Management, Environment Variables, Jira, Issue Tracking, Project Management, Backlog, Agile, Scrum, Sprints, Stand-ups, Retrospectives, Story Points, User Stories, Epic, Burndown Charts, DevSecOps, Containerization, Docker, Orchestration, Microservices, Scalability, High Availability, Technical Documentation, Software Development Life Cycle, SDLC.
+</details>
 
 This course was an entire workshop focusing on DevOps practices, such as continuous integration, delivery and deployment, containerisation, testing practices, and site reliability monitoring/observability.
 
@@ -83,6 +84,11 @@ Web service for users to fetch articles, extract keywords from articles, visuali
 > [!IMPORTANT]
 > This project is very relevant for industry work! Specifically in software engineering
 
+<details>
+  <summary><mark>Keywords</mark></summary>
+  Software Engineering, Microservices Architecture, Storage Microservice, PostgreSQL, Relational Database Management System, RDBMS, SQL, Database Schema Design, ACID Properties, Database Transactions, Indexing, Query Optimization, Connection Pooling, Database Migrations, Web API, RESTful API, CRUD Operations, Request-Response Lifecycle, Authentication, Authorization, JWT, Data Persistence, Storage Management, AWS, Amazon Web Services, AWS Elastic Beanstalk, SaaS, Environment Configuration, Swagger, OpenAPI Specification, API Documentation, Postman, API Testing, Testing, Unit Testing, Integration Testing, End-to-End Testing, Jest, Supertest, Mocking, Test Coverage, Regression Testing, GitHub, Version Control, Git, Branching Strategies, Pull Requests, Code Reviews, GitHub Actions, CI/CD, Continuous Integration, Continuous Deployment, Frontend, User Interface, UI, API Consumption, File Upload, PDF Generation, Digital Signatures, Data Encryption, Jira, Issue Tracking, Project Management, Bug Tracking, Backlog, Agile, Scrum, Sprints, Stand-ups, Retrospectives, Story Points, User Stories, Epic, SDLC, Software Development Life Cycle, Microservice Communication, Service Discovery.
+</details>
+
 This course was an entire workshop focusing on requirements and design in API development. 
 
 I led a 5-member software team, where the group built **_ei-ei_**, an e-invoicing web service and storage API deployed using AWS and swagger to be used by other groups. My role in the service was in some backend routes, and most frontend component designs, as well as managing Jira tasks. 
@@ -109,6 +115,8 @@ Web service for users to create, manage and send invoices to other users easily 
 
 *img: implementation of the frontend web service, with many bugs and UI issues to be fixed. At this stage, testing the backend APIs were the priority*
 
+[Back to Top](#projects.github.io)
+
 ---
 
 ## Artificial Intelligence and Data Analytics
@@ -117,6 +125,11 @@ Web service for users to create, manage and send invoices to other users easily 
 
 > [!IMPORTANT]
 > This project is very relevant for industry work! Specifically in data analytics.
+
+<details>
+  <summary><mark>Keywords</mark></summary>
+  Fintech, Cryptocurrency, Crypto Market Analysis, OHLCV, Time-Series Data, Market Data Ingestion, Linear Regression, OLS, Ridge, Gradient Boosting, Ensemble Methods, Predictive Analytics, Feature Engineering, Moving Averages, Technical Analysis, Sentiment Analysis, VADER Sentiment Analysis, Natural Language Processing, NLP, News Analytics, News Scraping, Sentiment Scoring, Text Preprocessing, Lexicon-based Sentiment, Prompt Engineering, Large Language Models, LLMs, Prompt Optimization, System Prompts, Context Window Management, Hallucination Mitigation, Data Factory Floor, ETL Pipelines, Data Orchestration, Data Ingestion, Real-time Streaming, WebSockets, HuggingFace, CoinDesk, CryptoCompare, API, Backend Development, Python, NumPy, Pandas, Scikit-learn, Frontend Development, React.js, Data Visualization, Financial Dashboards, State Management, Netlify, Cloud, High-Frequency Data, Data Cleaning, Outlier Detection, Artificial Intelligence, Machine Learning, Model Deployment, MLOps, Performance Metrics, Mean Squared Error, MSE, R-squared, Hyperparameter Tuning, Cross-Validation, Fintech Innovation, Portfolio Optimisation, Trading Algorithms, Risk Management, Quantitative Analysis, Data Analytics, Software Engineering.
+</details>
 
 This course was an entire workshop focusing on the 4 stages of the Data Factory Floor, for data analytics for financial markets, specifically, cryptocurrency markets.
 
@@ -173,6 +186,11 @@ I learnt what it means to have a "good" model that can classify and detect vario
 
 
 ### comp9321 - Data Services Engineering
+
+<details>
+  <summary><mark>Keywords</mark></summary>
+  Data Services Engineering, Artificial Intelligence, Machine Learning, Linear regression, Random Forest, Lasso, Gradient Boosting, Ensemble Methods, Classiciation, Logistic Regression, Performance Metrics, F1-Score, Mean Squared Error, MSE, R-squared, Hyperparameter Tuning, Cross-Validation, Data Analytics, API, RESTful API, CRUD Operations, Request-Response Lifecycle, Swagger, OpenAPI Specification, API Documentation, Postman, API Testing, Testing, Integration Testing, Gemini, Prompt Engineering, Large Language Models, LLMs, Backend Development, Python, Flask, NumPy, Pandas, Pandas Dataframes, Scikit-learn, Data Preprocessing, Feature Engineering, Technical Analysis, Data Visualisation, Data Ingestion, Data Orchestration, ETL Pipelines, SQLite, PLpgSQL, CSV, Data Collection, High-Frequency Data, Data Cleaning, Outlier Detection, SaaS
+</details>
 
 #### ass3 - Machine Learning
 This machine learning assignment does 2 things:
@@ -274,6 +292,8 @@ Different characters correspond to a different number of bridges between island 
 
 *img: model-based agent successfully playing Hashiwokakero in a terminal environment*
 
+[Back to Top](#projects.github.io)
+
 ---
 
 ## Database Systems and Computer Networks
@@ -308,6 +328,7 @@ An assignment which uses both Python and SQL to store pokemon data, and uses thi
 #### ass1 - Beer Database
 An assignment which uses SQL to store and manage data about different kinds of beer produced in/imported to Australia. The focus of this assignment was on basic database techniques including merging tables. 
 
+[Back to Top](#projects.github.io)
 
 ---
 
@@ -426,6 +447,5 @@ A lab exercise which tests the effectiveness of Depth First Search and Breadth F
 #### ass1 - Flight Database
 An assignment which uses a tree data structure to perform operations in managing a basic flight database.
 
----
-
 [Back to Top](#projects.github.io)
+
