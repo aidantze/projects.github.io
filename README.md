@@ -355,7 +355,7 @@ My contribution to the project was pretty much all slide page functionality, and
 The requirements were strict in some layout components, but freedom was given for pretty much everything else. A separate report was also written documenting an alternative end-to-end testing route, and justifications for this route. 
 
 **Links:**
-- [GitHub repo](https://github.com/aidantze/presto-deploy3)
+- [GitHub repo](https://github.com/aidantze/presto-deploy3) (link may not work for a private repo)
 - [Deployed frontend](https://z5360925-presto-deploy.vercel.app/)
 
 <img width="1347" height="829" alt="presto-home" src="https://github.com/user-attachments/assets/f590fb09-4193-47b1-9d1a-29b625808e01" />
