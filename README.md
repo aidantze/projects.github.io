@@ -11,6 +11,22 @@ I will list all projects, and provide a brief description for each, below, group
 
 > Last updated: 8/5/26
 
+## Current Initiatives
+
+### SelahSearch - NLP Worker and API Gateway
+
+> [!IMPORTANT]
+> This project is very relevant for industry work! Specifically in AI (NLP)
+
+> [!NOTE]
+> This project is my individual passion project!
+
+**_SelahSearch_** is an AI-powered microservice designed to be an example of how modern-day AI technologies can transform how local Christian churches operate. It uses Natural Language Processing to compute vector values for matching inputted bible passages with worship song lyrics via a list of theological themes, designed to be a tool to assist worship leaders with choosing relevant songs for their services. It consists an NLP worker, handling the main NLP vector matching logic that is usually performance intensive and requiring slow starts after periods of inactivity, which was deployed to Hugging Face. And an API Gateway, handling all database management and API request/response logic, which was deployed to Render. 
+
+Work is currently underway to turn this single API into a powerful microservice with many more usecases, such as getting songs that match a theme for use in topical sermons, migration to a query string to handle multiple passages at once, and compatibility with different song lists for use by different churches. This would also likely include a nice frontend for public use. 
+
+This project is currently deployed in a dev build but cannot be deployed to production unless a license to use copyrighted lyrics is acquired.
+
 ---
 
 ## Software Engineering
@@ -124,7 +140,7 @@ Web service for users to create, manage and send invoices to other users easily 
 ### fins3645 - Crypto Market Data Design and Analysis
 
 > [!IMPORTANT]
-> This project is very relevant for industry work! Specifically in data analytics.
+> This project is very relevant for industry work! Specifically in data analytics and AI (ML, NLP)
 
 <details>
   <summary><mark>Keywords</mark></summary>
@@ -157,7 +173,7 @@ Uniquely, this was the only course I've done which encourages use of generative 
 ### comp9517 — Computer Vision Workshop
 
 > [!IMPORTANT]
-> This project is very relevant for industry work! Specifically in Artificial Intelligence
+> This project is very relevant for industry work! Specifically in AI (computer vision)
 
 > [!NOTE]
 > This project is a group collaboration!
@@ -193,6 +209,10 @@ I learnt what it means to have a "good" model that can classify and detect vario
 </details>
 
 #### ass3 - Machine Learning
+
+> [!IMPORTANT]
+> This project is very relevant for industry work! Specifically in AI (ML)
+
 This machine learning assignment does 2 things:
 1. Predicts the age of a policyholder in a car insurance company using a regression model. This model aims to reduce mean squared error
 2. Predicts if a policyholder in a car insurance company will lodge a claim using a classification model. This model aims to maximise F1-score while reducing overfitting
