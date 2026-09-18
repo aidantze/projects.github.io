@@ -1,7 +1,20 @@
 # projects.github.io
-Welcome to my personal project portfolio! Here you will find a range of all the relevant programming projects I have done over the course of my uni degree (at UNSW). This is not to say that these were the only projects I did. Rather, these were all the most industry-relevant, high-scoring projects.
+Welcome to my personal project portfolio! Here you will find a range of all the relevant programming projects I have done over the course of my uni degree (at UNSW) and in my work placements/jobs. This is not to say that these were the only projects I did. Rather, these were all the most industry-relevant, high-scoring projects.
 
 Also [check out my portfolio website!](https://aidantze.netlify.app/) It was initially made using raw HTML/CSS in 2023, but was revamped completely in 2025 using React.js and tailwind.css.
+
+Contents (organised by category): 
+- [Passion Projects](#passion-projects)
+- [Work Experience Projects](#work-experience)
+- [Software Engineering Projects](#software-engineering)
+  - 
+- [AI and Data Analytics Projects](#artificial-intelligence-and-data-analytics)
+  - 
+- [Database Systems and Computer Networks Projects](#database-systems-and-computer-networks)
+  - 
+- [Advanced Programming and Design Projects](#advanced-programming-and-design)
+  - 
+
 
 I will list all projects, and provide a brief description for each, below, grouped by topic. Some have links to my deployed projects and other github repos:
 - [Software Engineering](#software-engineering) - KeyTrend devops webservice and microservice API, ei-ei software design webservice and microservice API
@@ -9,9 +22,9 @@ I will list all projects, and provide a brief description for each, below, group
 - [Database Systems and Computer Networks](#database-systems-and-computer-networks) - SockForums UDP/TCP terminal application, toolkit for finance, pokemon database project
 - [Advanced Programming and Design](#advanced-programming-and-design) - presto web app, qanda web app, General directed weighted graph, Dutch-Flag Sort formal verification, dungeon-crawler game analysis
 
-> Last updated: 8/5/26
+> Last updated: 18/9/26
 
-## Current Initiatives
+## Passion Projects
 
 ### SelahSearch - NLP Worker and API Gateway
 
@@ -26,6 +39,14 @@ I will list all projects, and provide a brief description for each, below, group
 Work is currently underway to turn this single API into a powerful microservice with many more usecases, such as getting songs that match a theme for use in topical sermons, migration to a query string to handle multiple passages at once, and compatibility with different song lists for use by different churches. This would also likely include a nice frontend for public use. 
 
 This project is currently deployed in a dev build but cannot be deployed to production unless a license to use copyrighted lyrics is acquired.
+
+---
+
+## Work Experience
+
+### Bamlabs – Workflow Automation tools and Lead List building
+
+I currently work at Bamlabs, an AI Go-To-Market (GTM) Engineering startup focused on embedding into other startups, working with them to deliver AI tools and data processes so companies can focus more on their sales closures. I primarily work on building agents that help to automate more of the company's internal workflows such as Lead List building, email/mobile backfill, company and people search, web scraping, mobile DNC washing and task schedulers. These agents are all part of an end-to-end lead list task (e.g. finding decision makers across 100 companies for a particular industry) that the company regularly does for their clients. I use Claude, Clay/Deepline/Firmable (data providers) and other tools to perform these tasks. Other tasks involve cleaning our GitHub repos and shared drives, and performing some research building reports to help identify more client connections.
 
 ---
 
@@ -409,6 +430,21 @@ This was a tutorial exercise where we would get familiar with Node.js and React.
 <img width="668" height="716" alt="2048-fail" src="https://github.com/user-attachments/assets/283c3562-66fc-44fd-a448-3a1aff538d10" />
 
 *img: screenshot of the main page for the 2048 application*
+
+
+### comp6991 - Solving Modern Programming Problems with Rust
+
+#### plaza - Reddit r/place using Rust Concurrency
+
+An assignment to implement the Reddit April Fools social event known as "r/place" but in a terminal environment. Users place a pixel on a large grid but have to wait some time before placing another one. The service had to allow multiple users to use the system, handling simultaneous actions and slow connections. The focus of this assignment was on Rust concurrency (scope threading, arc/mutex and send/sync trait channels), traits/generics, closures and macros without using any form of unsafe Rust.
+
+#### ortalab - Balatro card/deck scorer system
+
+An assignment to implement a Balatro scoring backend. Cards and jokers are added to the system and the system calculates the total score of the cards with the effects of Balatro jokers applied. As part of a bonus feature, I build a basic frontend and connected that to this backend to demonstrate API development in Rust and integration for Fullstack applications (which also required some threading). The focus of this assignment was on Rust ownership rules, lifetimes, modularity and testing. 
+
+<img width="1463" height="846" alt="Screenshot 2026-07-13 at 20 20 15" src="https://github.com/user-attachments/assets/97fdd430-6f52-474f-baca-34647641f08a" />
+
+*img: screenshot of the main page for the Balatro scorer frontend*
 
 
 ### comp6771 - Advanced C++
