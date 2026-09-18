@@ -5,29 +5,37 @@ Also [check out my portfolio website!](https://aidantze.netlify.app/) It was ini
 
 Contents (organised by category): 
 - [Passion Projects](#passion-projects)
--   [SelahSearch - NLP Worker and API Gateway](#selahsearch)
+  - [SelahSearch](#selahsearch) - NLP Worker and API Gateway
 - [Work Experience Projects](#work-experience)
-- [Software Engineering Projects](#software-engineering)
-  - 
+  - [Bamlabs](#bamlabs) - AI GTM Engineering
+  - [CBA](#commbank) - Software Internship
+- [Large-Scale Software Engineering Projects](#software-engineering)
+  - [Advanced DevOps Workshop](#seng3011) - KeyTrend devops webservice and microservice API
+  - [Requirements and Design Workshop](#seng2021) - ei-ei software design webservice and microservice API
 - [AI and Data Analytics Projects](#artificial-intelligence-and-data-analytics)
-  - 
+  - [Financial (Crypto) Market Data Analysis](#fins3645) - TILT.ai cryto market sentiment analysis app
+  - [Computer Vision Workshop](#comp9517) - Agropest computer vision analysis report
+  - [Data Services Engineering](#comp9321) - Deutsche-Bahn RESTful API and machine learning project
+  - [YarnLink](#yarnlink) - Indigenous Mental Health Chatbot
 - [Database Systems and Computer Networks Projects](#database-systems-and-computer-networks)
-  - 
+  - [Computer Networks and Applications](#comp3331) - SockForums UDP/TCP terminal application
+  - [Toolkit for Finance](#fins3646) - Event Study
+  - [Database Systems](#comp3311) - Pokemon Database
 - [Advanced Programming and Design Projects](#advanced-programming-and-design)
-  - 
-
-
-I will list all projects, and provide a brief description for each, below, grouped by topic. Some have links to my deployed projects and other github repos:
-- [Software Engineering](#software-engineering) - KeyTrend devops webservice and microservice API, ei-ei software design webservice and microservice API
-- [Artificial Intelligence and Data Analytics](#artificial-intelligence-and-data-analytics) - TILT.ai cryto market sentiment analysis app, Agropest computer vision analysis report, Deutsche-Bahn RESTful API, YarnLink
-- [Database Systems and Computer Networks](#database-systems-and-computer-networks) - SockForums UDP/TCP terminal application, toolkit for finance, pokemon database project
-- [Advanced Programming and Design](#advanced-programming-and-design) - presto web app, qanda web app, General directed weighted graph, Dutch-Flag Sort formal verification, dungeon-crawler game analysis
+  - [Web Frontend Programming](#comp6080) - presto and qanda web apps
+  - [Solving Modern Programming Problems with Rust](#comp6991) - plaza and ortalab Rust projects
+  - [Advanced c++ Programming](#comp6771) - General directed weighted graph
+  - [Software Formal Verification Workshop](#seng2011) - Dutch-Flag Sort formal verification
+  - [Object-Oriented Programming](#comp2511) - Dungeon-crawler game analysis
 
 > Last updated: 18/9/26
 
 ## Passion Projects
 
-### SelahSearch - NLP Worker and API Gateway
+### SelahSearch
+NLP Worker and API Gateway
+
+> Dec 2025 (and ongoing)
 
 > [!IMPORTANT]
 > This project is very relevant for industry work! Specifically in AI (NLP)
@@ -45,13 +53,16 @@ This project is currently deployed in a dev build but cannot be deployed to prod
 
 ## Work Experience
 
-### Bamlabs – AI Engineer, building workflow automation tools and lead lists
+### Bamlabs
+AI Engineer, building workflow automation tools and lead lists
+
+> Aug 2026 (and ongoing)
 
 > [!IMPORTANT]
 > This work experience is very relevant for industry work! Specifically in AI (GTM)
 
 > [!NOTE]
-> This summarises all project work I have done for this company since Aug 2026
+> This summarises all project work I have done for this company
 
 I currently work at Bamlabs, an AI Go-To-Market (GTM) Engineering startup focused on embedding into other startups, working with them to deliver AI tools and data processes so companies can focus more on their sales closures. I primarily work on building agents that help to automate more of the company's internal workflows such as Lead List building, email/mobile backfill, company and people search, web scraping, mobile DNC washing and task schedulers. These agents are all part of an end-to-end lead list task (e.g. finding decision makers across 100 companies for a particular industry) that the company regularly does for their clients. I use Claude, Clay/Deepline/Firmable (data providers) and other tools to perform these tasks. Other tasks involve cleaning our GitHub repos and shared drives, and performing some research building reports to help identify more client connections.
 
@@ -60,13 +71,16 @@ I learnt how the startup ecosystem is so much different to the big corps, with t
 *Due to company confidentiality agreements, I am unable to share any screenshots or specifics of the work I did.*
 
 
-### Commbank – Software Engineering Intern, managing APIs and migrating observability systems
+### Commbank
+Software Engineering Intern, managing APIs and migrating observability systems
+
+> Jul 2024 - Jan 2025
 
 > [!IMPORTANT]
 > This work experience is very relevant for industry work! Specifically in software engineering
 
 > [!NOTE]
-> This summarises all project work I have done for this company from July 2024 - Jan 2025
+> This summarises all project work I have done for this company
 
 I did a software engineering internship for 6 months at Commbank, where I was placed in a team in Home Buying managing secure APIs surrounding the bank's mortgage insurance. I started in frontend engineering, building a new management portal interface for internal staff only. I helped write tests and maintain some internal data APIs querying from MongoDB, even going so far as to deploy one for the first time to TeamCity and AWS. On top of my learnings in cloud deployments, I took responsibility to migrate the team's systems to a new observability stack (Grafana Labs + Observe + PagerDuty) as part of a company wide initiative, running demonstrates with similar teams near to mine on how they can use the new platforms. I also wrote Jira tasks, organising the team's Jira board, maintained GitHub CI/CD pipelines, and delivered a wellness presentation to my Chapter. 
 
@@ -78,7 +92,10 @@ I learnt what it meant to take responsibility for my own tasks, adapting a growt
 
 ## Software Engineering
 
-### seng3011 - Software DevOps Workshop
+### seng3011
+Software DevOps Workshop
+
+> Feb - Apr 2025
 
 > [!IMPORTANT]
 > This project is very relevant for industry work! Specifically in software engineering
@@ -142,7 +159,10 @@ Web service for users to fetch articles, extract keywords from articles, visuali
 *img: screenshot of Render logs for deployed frontend*
 
 
-### seng2021 - Software Requirements and Design Workshop
+### seng2021
+Software Requirements and Design Workshop
+
+> Feb - Apr 2023
 
 > [!IMPORTANT]
 > This project is very relevant for industry work! Specifically in software engineering
@@ -184,7 +204,10 @@ Web service for users to create, manage and send invoices to other users easily 
 
 ## Artificial Intelligence and Data Analytics
 
-### fins3645 - Crypto Market Data Design and Analysis
+### fins3645
+Crypto Market Data Design and Analysis
+
+> Jun - Aug 2025
 
 > [!IMPORTANT]
 > This project is very relevant for industry work! Specifically in data analytics and AI (ML, NLP)
@@ -217,7 +240,10 @@ Uniquely, this was the only course I've done which encourages use of generative 
 *img: screenshot of frontend Dashboard page showcasing all the data visualisastions*
 
 
-### comp9517 — Computer Vision Workshop
+### comp9517
+Computer Vision Workshop
+
+> Sept - Nov 2025
 
 > [!IMPORTANT]
 > This project is very relevant for industry work! Specifically in AI (computer vision)
@@ -248,7 +274,10 @@ I learnt what it means to have a "good" model that can classify and detect vario
 *img: powerpoint slide summarising the key results of the YOLO model, specifically noise and resolution augumentation results*
 
 
-### comp9321 - Data Services Engineering
+### comp9321
+Data Services Engineering
+
+> Feb - Apr 2024
 
 <details>
   <summary><mark>Keywords</mark></summary>
@@ -269,6 +298,9 @@ This machine learning assignment does 2 things:
 *img: code screenshot of testing different models for regression*
 
 #### ass2 - RESTful API
+
+> [!IMPORTANT]
+> This project is very relevant for industry work! Specifically in software engineering
 
 > [!NOTE]
 > This project is one of my most favourite assignments I've ever done!
@@ -306,7 +338,10 @@ Extracts data from a csv file, stores such info in python dataframes, cleans and
 *img: visualisation of data summary after data cleansing and manipulation*
 
 
-### YarnLink - Indigenous Mental Health Chatbot
+### YarnLink
+Indigenous Mental Health Chatbot for Rural Australia
+
+> Aug - Sept 2025
 
 > [!IMPORTANT]
 > This project was featured in a Society Competition Showcase!
@@ -333,7 +368,10 @@ Quite impressively, the entire application, both the API and the website, was pu
 *img: sample response displayed in the website from the backend API*
 
 
-### comp3411 - Artificial Intelligence
+### comp3411
+Artificial Intelligence Fundamentals
+
+> Feb - Apr 2024
 
 #### ass2 - Search Algorithms Report
 Report which analyses different search algorithms, including heuristic path search evaluation and alpha-beta pruning for 2-player game simulation.
@@ -365,7 +403,11 @@ Different characters correspond to a different number of bridges between island 
 
 ## Database Systems and Computer Networks
 
-### comp3331 - Computer Networks and Applications
+### comp3331
+Computer Networks and Applications
+
+> Feb - Apr 2025
+
 This networks assignment involved the creation of **_SockForums_ 🧦**, an online forum application that operates in the terminal environment and communicates between client and server using UDP and TCP protocols.
 
 Users register/login with a username and password stored in a credentials.txt file in the server (yes, this isn't very secure, but it had to be implemented according to assignment specification). Threads are created and stored in individual files in the server containing messages and file upload notifications. Users can create, list and delete threads, and create, read, edit and delete messages, plus they can request to upload a file to a thread or download a file from a thread. Finally, the user can logout safely. 
@@ -377,7 +419,10 @@ UDP was used for all command interactions, while TCP was reserved specifically f
 *img: screenshot of terminal with 1 server and 2 clients over UDP connection, clients simultaneously login with same username, only 1 is accepted*
 
 
-### fins3646 - Toolkit for Finance
+### fins3646
+Toolkit for Finance
+
+> Feb - Apr 2024
 
 #### project2 - Event Study
 
@@ -387,7 +432,10 @@ UDP was used for all command interactions, while TCP was reserved specifically f
 A project that performed some introductory data manipulation using pandas, before using the data to analyse whether total volatility has any effect on a long-short portfolio consisting of top-performing NYSE stocks. The event study was deliberately made unclear for us to figure out the null hypothesis for ourselves. 
 
 
-### comp3311 - Database Systems
+### comp3311
+Database Systems
+
+> Feb - Apr 2023
 
 #### ass2 - Pokemon Database
 An assignment which uses both Python and SQL to store pokemon data, and uses this data to calculate attack values in a simulated pokemon duel.
@@ -401,7 +449,10 @@ An assignment which uses SQL to store and manage data about different kinds of b
 
 ## Advanced Programming and Design
 
-### comp6080 – Web Frontend Programming
+### comp6080
+Web Frontend Programming
+
+> Feb - Apr 2026
 
 This course taught some fundamentals of web programming and UX design, usability, accessibility, testing and deployment. It progressed through fundamentals of web programming (HTML, CSS, Node.js) before moving into React + Vite architecutres, routing, component rendering and tailwind.css in-class styling. 
 
@@ -435,7 +486,7 @@ The requirements were strict in some layout components, but freedom was given fo
 
 #### qanda – Q&A forum application
 
-This project involved the creation of **_qanda_**, a tech-themed Q&A forum application. Users can create accounts, forum threads and messages within threads. Messages are nested based on replies to other messages. They can view theirs and others' profiles and admin privileges if they are an admin.
+This assignment involved the creation of **_qanda_**, a tech-themed Q&A forum application. Users can create accounts, forum threads and messages within threads. Messages are nested based on replies to other messages. They can view theirs and others' profiles and admin privileges if they are an admin.
 
 The challege here was to go back to fundamentals of web frontend programming and only use HTML, CSS and Node.js, with only some styling libraries like tailwind allowed. This means for such a single page application, the routing and state management had to be done manually. On top of this, a few challenging components in the specification were completed: Polling and infinite scroll allow threads and messages to be loaded progressively and updated live without requiring a refresh, while static feed offline access allows the most recent thread to be cached and retrieved when internet is down.
 
@@ -458,7 +509,12 @@ This was a tutorial exercise where we would get familiar with Node.js and React.
 *img: screenshot of the main page for the 2048 application*
 
 
-### comp6991 - Solving Modern Programming Problems with Rust
+### comp6991
+Solving Modern Programming Problems with Rust
+
+> Jun - Aug 2026
+
+This course taught advanced Rust principles like ownership and borrowing, modularity, traits/generics, macros, closures, lifetimes, concurrency and unsafe Rust. 
 
 #### plaza - Reddit r/place using Rust Concurrency
 
@@ -473,7 +529,10 @@ An assignment to implement a Balatro scoring backend. Cards and jokers are added
 *img: screenshot of the main page for the Balatro scorer frontend*
 
 
-### comp6771 - Advanced C++
+### comp6771
+Advanced C++
+
+> Jun - Aug 2025
 
 This course taught advanced c++ practices like operator overloading, iterators, dynamic polymorphism, memory management, templates and metaprogramming.
 
@@ -490,7 +549,10 @@ An assignment to implement a filtered string view class from scratch. This class
 This assignment focuses on the use of exception handling, operator overloading and iterator management for static yet robust programming.
 
 
-### seng2011 - Formal Verification workshop
+### seng2011
+Formal Verification workshop
+
+> Sept - Nov 2022
 
 This course was a formal verification course, which used mathematical predicates and Dafny to prove the validity of all internal statements within an algorithm or function (white-box testing). 
 
@@ -501,7 +563,10 @@ One of the assignments involved applying the Dutch Flag Sort algorithm to effici
 *img: code screenshot of formal verification for DNA sorting algorithm*
 
 
-### comp2511 - Object-Oriented Design and Programming
+### comp2511
+Object-Oriented Design and Programming
+
+> Sept - Nov 2023
 
 #### assignment-ii - Dungeon-crawler game
 
@@ -518,7 +583,10 @@ Improves upon the current dungeon-crawler game by implementing new features. My 
 Simulates the orbit of satellites around Jupiter using basic object-oriented programming techniques in Java. The focus of this assignment was on streams and debugging in Java. 
 
 
-### comp2521 - Data Structures and Algorithms
+### comp2521
+Data Structures and Algorithms
+
+> Sept - Nov 2022
 
 #### ass2 - Pagerank
 An assignment which uses graph algorithms such as Dijkstra path find, and advanced mathematical formulas, to calculate the pagerank value for web pages, to assist in recommendation of pages to a user in a search engine. 
