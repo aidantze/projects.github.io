@@ -5,6 +5,7 @@ Also [check out my portfolio website!](https://aidantze.netlify.app/) It was ini
 
 Contents (organised by category): 
 - [Passion Projects](#passion-projects)
+-   [SelahSearch - NLP Worker and API Gateway](#selahsearch)
 - [Work Experience Projects](#work-experience)
 - [Software Engineering Projects](#software-engineering)
   - 
@@ -44,9 +45,34 @@ This project is currently deployed in a dev build but cannot be deployed to prod
 
 ## Work Experience
 
-### Bamlabs – Workflow Automation tools and Lead List building
+### Bamlabs – AI Engineer, building workflow automation tools and lead lists
+
+> [!IMPORTANT]
+> This work experience is very relevant for industry work! Specifically in AI (GTM)
+
+> [!NOTE]
+> This summarises all project work I have done for this company since Aug 2026
 
 I currently work at Bamlabs, an AI Go-To-Market (GTM) Engineering startup focused on embedding into other startups, working with them to deliver AI tools and data processes so companies can focus more on their sales closures. I primarily work on building agents that help to automate more of the company's internal workflows such as Lead List building, email/mobile backfill, company and people search, web scraping, mobile DNC washing and task schedulers. These agents are all part of an end-to-end lead list task (e.g. finding decision makers across 100 companies for a particular industry) that the company regularly does for their clients. I use Claude, Clay/Deepline/Firmable (data providers) and other tools to perform these tasks. Other tasks involve cleaning our GitHub repos and shared drives, and performing some research building reports to help identify more client connections.
+
+I learnt how the startup ecosystem is so much different to the big corps, with their fast-paced constantly-changing tech environment. I've learnt the importance of using Claude efficiently but carefully, to deliver client requests quickly but properly, acknowledging the benefits and flaws with the approach, and problem solving to find cheaper or more effective alternates that give me a wider data pool (e.g. different data providers) or accurate results (e.g. linkedIn URLs that actually exist). 
+
+*Due to company confidentiality agreements, I am unable to share any screenshots or specifics of the work I did.*
+
+
+### Commbank – Software Engineering Intern, managing APIs and migrating observability systems
+
+> [!IMPORTANT]
+> This work experience is very relevant for industry work! Specifically in software engineering
+
+> [!NOTE]
+> This summarises all project work I have done for this company from July 2024 - Jan 2025
+
+I did a software engineering internship for 6 months at Commbank, where I was placed in a team in Home Buying managing secure APIs surrounding the bank's mortgage insurance. I started in frontend engineering, building a new management portal interface for internal staff only. I helped write tests and maintain some internal data APIs querying from MongoDB, even going so far as to deploy one for the first time to TeamCity and AWS. On top of my learnings in cloud deployments, I took responsibility to migrate the team's systems to a new observability stack (Grafana Labs + Observe + PagerDuty) as part of a company wide initiative, running demonstrates with similar teams near to mine on how they can use the new platforms. I also wrote Jira tasks, organising the team's Jira board, maintained GitHub CI/CD pipelines, and delivered a wellness presentation to my Chapter. 
+
+I learnt what it meant to take responsibility for my own tasks, adapting a growth mindset to learn new skills with different tech stacks and systems quickly, sharing my knowledge with others who do similar work, and networking and connecting with people of different cultures, especially since most of my team were based in India. 
+
+*Due to company confidentiality agreements, I am unable to share any screenshots or specifics of the work I did.*
 
 ---
 
