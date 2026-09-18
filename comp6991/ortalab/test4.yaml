@@ -1,0 +1,15 @@
+cards_played:
+  - 10♥
+  - 10♥
+  - 10♥
+  - 10♥
+  - 4♥
+
+cards_held_in_hand: []
+
+jokers: 
+- Sly Joker
+- Wily Joker
+- Zany Joker
+- The Tribe
+- Abstract Joker

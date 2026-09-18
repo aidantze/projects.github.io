@@ -1,0 +1,15 @@
+cards_played:
+  - 9♣
+  - 5♠
+  - 5♦ 
+  - 2♣
+  - 2♥ 
+
+cards_held_in_hand: []
+
+jokers: 
+- Joker
+- Sly Joker
+- Crafty Joker
+- Abstract Joker
+- Flower Pot

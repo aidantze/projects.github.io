@@ -1,0 +1,16 @@
+cards_played:
+  - A♥
+  - 2♥
+  - 3♣
+  - 4♥
+  - 5♥
+
+cards_held_in_hand:
+  - 2♥
+  - 5♦
+  - 9♦
+
+jokers:
+  # - Joker
+  # - Mad Joker
+  # - Zany Joker

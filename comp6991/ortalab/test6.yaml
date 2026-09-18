@@ -1,0 +1,14 @@
+cards_played:
+  - 2♥
+  - 4♠
+  - 5♦
+  - 7♣
+  - 8♥
+
+cards_held_in_hand: []
+
+jokers:
+- Shortcut
+- Devious Joker
+- Flower Pot
+- Hack

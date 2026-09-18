@@ -1,0 +1,18 @@
+cards_played:
+  - A♦ 
+  - A♠
+  - A♦ 
+  - A♥ 
+  - A♣ 
+
+cards_held_in_hand:
+  - K♠
+  - 7♠
+  - 3♠
+
+jokers: 
+  - Scholar
+  - Smiley Face
+  - Odd Todd
+  - Fibonacci
+  # - Sock and Buskin

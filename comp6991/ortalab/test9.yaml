@@ -1,0 +1,20 @@
+cards_played:
+  - 2♥
+  - 5♠
+  - 7♦
+  - J♣
+  - Q♥
+
+cards_held_in_hand:
+  - K♥
+  - Q♠
+  - Q♦
+  - J♣
+  - 10♥
+
+jokers:
+- Raised Fist
+- Shoot The Moon
+- Baron
+- Mime
+- Hanging Chad
