@@ -9,6 +9,8 @@ Contents (organised by category):
 - [Work Experience Projects](#work-experience)
   - [Bamlabs](#bamlabs) - AI GTM Engineering
   - [CBA](#commbank) - Software Internship
+- [Thesis Projects](#thesis-projects)
+  - [Crescendo](#crescendo) - Orchestra & Choir VR Immersive Experience
 - [Large-Scale Software Engineering Projects](#software-engineering)
   - [Advanced DevOps Workshop](#seng3011) - KeyTrend devops webservice and microservice API
   - [Requirements and Design Workshop](#seng2021) - ei-ei software design webservice and microservice API
@@ -87,6 +89,47 @@ I did a software engineering internship for 6 months at Commbank, where I was pl
 I learnt what it meant to take responsibility for my own tasks, adapting a growth mindset to learn new skills with different tech stacks and systems quickly, sharing my knowledge with others who do similar work, and networking and connecting with people of different cultures, especially since most of my team were based in India. 
 
 *Due to company confidentiality agreements, I am unable to share any screenshots or specifics of the work I did.*
+
+---
+
+## Thesis Projects
+
+### Crescendo
+Honours Project - Orchestra & Choir VR Immersive Experience
+
+> Sept 2025 - Aug 2026
+
+> [!IMPORTANT]
+> This work experience is very relevant for industry work! Specifically in VR development
+
+> [!NOTE]
+> This summarises all project work I have done for this thesis project
+
+<details>
+  <summary><mark>Keywords</mark></summary>
+  Virtual Reality, VR Development, Unity, Unity Engine, Meta Quest, Meta Quest 2, Meta Quest 3, Meta Quest Pro, Standalone VR, Head-Mounted Display, HMD, Immersive Technology, Classical Music, Orchestra, Choir, Spatial Computing, Immersive Experience, Virtual Concert Hall, Content Authoring, Interactive Storytelling, Scene Composition, Prefab Variant Management, Asset Bundles, Addressables, Ray Casting, Physics Raycasting, Pointer Interactor, UI Interaction, Spatial Raycasting, Gaze Interaction, Object Selection, VR Presence, Sense of Presence, Immersion, Human-Computer Interaction, HCI, Spatial Perception, Embodiment, User Agency, Comfort Settings, Locomotion, Teleportation, Motion Sickness Mitigation, Unity Timelines, Timeline Asset, Playable API, Narrative Orchestration, Cue Synchronization, Audio-Visual Sync, Cutscene Design, Event Markers, Data-Oriented Technology Stack, DOTS, Data-Oriented Programming, Entity Component System, ECS, C# Job System, Burst Compiler, High-Performance C#, Audio Spectrum Data, Fast Fourier Transform, FFT, Audio Signal Processing, Audio Analysis, Spatial Audio, HRTF, Ambisonics, 3D Sound Localization, Dynamic Audio Visualisers, Frequency Bands, Audio Reactive Visuals, Peak Detection, Mesh Rendering, Skinned Mesh Renderer, Static Mesh Batching, Shader Graph, VFX Graph, Visual Effect Graph, Particle Systems, Custom Shaders, Universal Render Pipeline, URP, Dynamic Lighting, Lightmapping, Occlusion Culling, Performance Optimisation, Frame Rate Target, 72FPS, 90FPS, Render Thread Optimisation, Draw Call Reduction, Dynamic Batching, GPU Instancing, Profiling, Unity Profiler, Frame Debugger, OVR Metrics Tool, Memory Management, GC Allocation Reduction.
+</details>
+
+For a whole year, I did my thesis on something fun and exciting, one that mixes my skills in software engineering with my passions in classical music. Crescendo aims to bring classical music performed by UNSW's ensembles (managed by the MPU) to a whole new medium, bring accessibility and immersion to more users in the UNSW community. The UNSW Media & Immersive Team organised 3 recordings from the UNSW Orchestra and Choir for exclusive use in this application, and an interesting experience involving giant floating cubes of projections of the orchestra and choir was made. The problem was, the existing project had not reached its full potential and the vision originally realised by the stakeholders, the MPU. Content authoring became extremely tedious, quick onboarding of new recordings became impossible, and smooth performance was never achieved, due to Meta Quest headsets' hardware limits and excessive use of Bloom. Only 1 recording was properly implemented. 
+
+My contribution basically transformed the old project into something completely new, then was transformed again after we realised the previous transformation didn't work and new learnings were discovered. The immersive experience is now captured on a single screen with an abstract movie-theatre environment surrounding the user, which includes an animated audience. Sound and visuals combine to emulate the concert theatre experience, with a voxel cube canopy surrounding the screen with floating cubes and intriguing colour changes. Visualiser bars raise and lower along the walls, and lights fly past the stage along the walls. Particle effects and user interactions were also added for additional immersion and interest. 4 recordings now exist, including one from another ensemble (the UNSW Wind Symphony), with the newer recordings being onboarded within a day and documented for future developers. This necessitated additional audio processing and balancing for maximum listening comfort. Finally, a month was spent on performance optimisations, which yielded a consistent 60FPS across the whole experience.
+
+This project was all about enhancing musical interest beyond the limits of audio. It aims to create engagement and immersion without hindering on musical integrity. The challenges presented by the stakeholders meant overly ambitious ideas (like conducting rhythm games and adaptive mixed-reality thematic environments) were way beyond current scope. It became more of a design than a technical project, as the cohesion of different visual elements in the scene had to be spot on. I have learnt so much about the quirks of VR development in Unity 6, the difference between web and VR builds in terms of performance and intractability, and the importance of experimentation with design: there were so many unknowns with the project, so just getting hands-on building this was the best way for us to learn what works and what doesn't. 
+
+<img width="918" height="430" alt="theatreScene5" src="https://github.com/user-attachments/assets/df4054e0-1db3-4af4-8942-ecef7e382f6e" />
+
+*img: screenshot of new scene with a person object in foreground*
+
+<img width="1388" height="646" alt="voxelCanopy3" src="https://github.com/user-attachments/assets/5ff10da9-c80d-4378-9a31-008ba1604ea2" />
+
+*img: screenshot of the screen, canopy and surrounding effects from user's perspective in VR*
+
+<img width="711" height="424" alt="Screenshot 2026-07-21 at 15 18 52" src="https://github.com/user-attachments/assets/ef02a89e-c750-42e6-a446-ef0004e66571" />
+
+*img: screenshot of UI for song selection in VR*
+
+**You can find my final thesis report located in the thesis folder**
+
 
 ---
 
@@ -516,6 +559,11 @@ Solving Modern Programming Problems with Rust
 
 This course taught advanced Rust principles like ownership and borrowing, modularity, traits/generics, macros, closures, lifetimes, concurrency and unsafe Rust. 
 
+<details>
+  <summary><mark>Keywords</mark></summary>
+  Rust Programming Language, Systems Programming, Memory Safety, Ownership, Borrowing, Borrow Checker, Move Semantics, Copy vs Clone, Resource Acquisition Is Initialization, RAII, Smart Pointers, Box, Rc, Arc, RefCell, Cell, Modularity, Modules, Crate, Cargo, Workspace, Visibility, Public vs Private, Trait System, Traits, Associated Types, Supertraits, Monomorphization, Generics, Generic Constraints, Dynamic Dispatch, Trait Objects, vtable, Declarative Macros, macro_rules!, Procedural Macros, Derive Macros, Attribute Macros, Function-like Macros, TokenStream, Syn, Quote, Closures, Fn, FnMut, FnOnce, Higher-Rank Trait Bounds, HRTB, Environments and Capturing, Lifetimes, Lifetime Annotations, Lifetime Elision, Static Lifetime, Anonymous Lifetimes, Covariance, Contravariance, Invariance, Concurrency, Multithreading, Threads, Mutex, RwLock, Channels, mpsc, Message Passing, Shared State Concurrency, Send and Sync Traits, Atomics, Memory Barriers, Async/Await, Futures, Tokio, Executor, Unsafe Rust, Unsafe Blocks, Dereferencing Raw Pointers, NonNull, FFI, Foreign Function Interface, Undefined Behavior, UB, Pinning, PhantomData, Memory Layout, Data Alignment, Type System, Zero-Cost Abstractions.
+</details>
+
 #### plaza - Reddit r/place using Rust Concurrency
 
 An assignment to implement the Reddit April Fools social event known as "r/place" but in a terminal environment. Users place a pixel on a large grid but have to wait some time before placing another one. The service had to allow multiple users to use the system, handling simultaneous actions and slow connections. The focus of this assignment was on Rust concurrency (scope threading, arc/mutex and send/sync trait channels), traits/generics, closures and macros without using any form of unsafe Rust.
@@ -535,6 +583,11 @@ Advanced C++
 > Jun - Aug 2025
 
 This course taught advanced c++ practices like operator overloading, iterators, dynamic polymorphism, memory management, templates and metaprogramming.
+
+<details>
+  <summary><mark>Keywords</mark></summary>
+  C++ Language, C++, Systems Programming, Operator Overloading, Binary Operators, Unary Operators, Copy Assignment Operator, Move Assignment Operator, Subscript Operator, Function Call Operator, Spaceship Operator, Three-Way Comparison, Friendship and Operators, Standard Template Library, STL, Iterators, Input Iterators, Output Iterators, Forward Iterators, Bidirectional Iterators, Random Access Iterators, Contiguous Iterators, Custom Iterators, Iterator Categories, std::iterator_traits, Ranges, std::ranges, Sentinels, Dynamic Polymorphism, Inheritance, Virtual Functions, Pure Virtual Functions, Abstract Base Classes, Virtual Method Table, vtable, Virtual Pointer, vptr, Dynamic Casting, dynamic_cast, RTTI, Runtime Type Information, Object-Oriented Programming, OOP, Override Specifier, Final Specifier, Object Layout, Memory Management, Resource Acquisition Is Initialization, RAII, Stack Allocation, Heap Allocation, Dynamic Memory, Raw Pointers, Smart Pointers, std::unique_ptr, std::shared_ptr, std::weak_ptr, Custom Deleters, Placement New, Custom Memory Allocators, Memory Leaks, Dangling Pointers, Double Free, AddressSanitizer, ASan, Move Semantics, Rvalue References, std::move, std::forward, Perfect Forwarding, Rule of Three, Rule of Five, Rule of Zero, Templates, Function Templates, Class Templates, Variable Templates, Template Specialization, Partial Specialization, Template Argument Deduction, Concepts and Constraints, std::enable_if, SFINAE, Substitution Failure Is Not An Error, Template Metaprogramming, TMP, Compile-Time Evaluation, constexpr, consteval, constinit, Type Traits, std::is_same, Variadic Templates, Parameter Packs, Fold Expressions, Expression Templates, Policy-Based Design, Curiously Recurring Template Pattern, CRTP, Static Polymorphism, Zero-Overhead Abstractions.
+</details>
 
 #### ass3 - General Directed Weighted Graph
 
