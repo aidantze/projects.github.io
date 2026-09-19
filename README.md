@@ -1,19 +1,43 @@
 # projects.github.io
-Welcome to my personal project portfolio! Here you will find a range of all the relevant programming projects I have done over the course of my uni degree (at UNSW). This is not to say that these were the only projects I did. Rather, these were all the most industry-relevant, high-scoring projects.
+Welcome to my personal project portfolio! Here you will find a range of all the relevant programming projects I have done over the course of my uni degree (at UNSW) and in my work placements/jobs. This is not to say that these were the only projects I did. Rather, these were all the most industry-relevant, high-scoring projects.
 
 Also [check out my portfolio website!](https://aidantze.netlify.app/) It was initially made using raw HTML/CSS in 2023, but was revamped completely in 2025 using React.js and tailwind.css.
 
-I will list all projects, and provide a brief description for each, below, grouped by topic. Some have links to my deployed projects and other github repos:
-- [Software Engineering](#software-engineering) - KeyTrend devops webservice and microservice API, ei-ei software design webservice and microservice API
-- [Artificial Intelligence and Data Analytics](#artificial-intelligence-and-data-analytics) - TILT.ai cryto market sentiment analysis app, Agropest computer vision analysis report, Deutsche-Bahn RESTful API, YarnLink
-- [Database Systems and Computer Networks](#database-systems-and-computer-networks) - SockForums UDP/TCP terminal application, toolkit for finance, pokemon database project
-- [Advanced Programming and Design](#advanced-programming-and-design) - presto web app, qanda web app, General directed weighted graph, Dutch-Flag Sort formal verification, dungeon-crawler game analysis
+Contents (organised by category): 
+- [Passion Projects](#passion-projects)
+  - [SelahSearch](#selahsearch) - NLP Worker and API Gateway
+- [Work Experience Projects](#work-experience)
+  - [Bamlabs](#bamlabs) - AI GTM Engineering
+  - [CBA](#commbank) - Software Internship
+- [Thesis Projects](#thesis-projects)
+  - [Crescendo](#crescendo) - Orchestra & Choir VR Immersive Experience
+- [Large-Scale Software Engineering Projects](#software-engineering)
+  - [Advanced DevOps Workshop](#seng3011) - KeyTrend devops webservice and microservice API
+  - [Requirements and Design Workshop](#seng2021) - ei-ei software design webservice and microservice API
+- [AI and Data Analytics Projects](#artificial-intelligence-and-data-analytics)
+  - [Financial (Crypto) Market Data Analysis](#fins3645) - TILT.ai cryto market sentiment analysis app
+  - [Computer Vision Workshop](#comp9517) - Agropest computer vision analysis report
+  - [Data Services Engineering](#comp9321) - Deutsche-Bahn RESTful API and machine learning project
+  - [YarnLink](#yarnlink) - Indigenous Mental Health Chatbot
+- [Database Systems and Computer Networks Projects](#database-systems-and-computer-networks)
+  - [Computer Networks and Applications](#comp3331) - SockForums UDP/TCP terminal application
+  - [Toolkit for Finance](#fins3646) - Event Study
+  - [Database Systems](#comp3311) - Pokemon Database
+- [Advanced Programming and Design Projects](#advanced-programming-and-design)
+  - [Web Frontend Programming](#comp6080) - presto and qanda web apps
+  - [Solving Modern Programming Problems with Rust](#comp6991) - plaza and ortalab Rust projects
+  - [Advanced c++ Programming](#comp6771) - General directed weighted graph
+  - [Software Formal Verification Workshop](#seng2011) - Dutch-Flag Sort formal verification
+  - [Object-Oriented Programming](#comp2511) - Dungeon-crawler game analysis
 
-> Last updated: 8/5/26
+> Last updated: 18/9/26
 
-## Current Initiatives
+## Passion Projects
 
-### SelahSearch - NLP Worker and API Gateway
+### SelahSearch
+NLP Worker and API Gateway
+
+> Dec 2025 (and ongoing)
 
 > [!IMPORTANT]
 > This project is very relevant for industry work! Specifically in AI (NLP)
@@ -29,9 +53,92 @@ This project is currently deployed in a dev build but cannot be deployed to prod
 
 ---
 
+## Work Experience
+
+### Bamlabs
+AI Engineer, building workflow automation tools and lead lists
+
+> Aug 2026 (and ongoing)
+
+> [!IMPORTANT]
+> This work experience is very relevant for industry work! Specifically in AI (GTM)
+
+> [!NOTE]
+> This summarises all project work I have done for this company
+
+I currently work at Bamlabs, an AI Go-To-Market (GTM) Engineering startup focused on embedding into other startups, working with them to deliver AI tools and data processes so companies can focus more on their sales closures. I primarily work on building agents that help to automate more of the company's internal workflows such as Lead List building, email/mobile backfill, company and people search, web scraping, mobile DNC washing and task schedulers. These agents are all part of an end-to-end lead list task (e.g. finding decision makers across 100 companies for a particular industry) that the company regularly does for their clients. I use Claude, Clay/Deepline/Firmable (data providers) and other tools to perform these tasks. Other tasks involve cleaning our GitHub repos and shared drives, and performing some research building reports to help identify more client connections.
+
+I learnt how the startup ecosystem is so much different to the big corps, with their fast-paced constantly-changing tech environment. I've learnt the importance of using Claude efficiently but carefully, to deliver client requests quickly but properly, acknowledging the benefits and flaws with the approach, and problem solving to find cheaper or more effective alternates that give me a wider data pool (e.g. different data providers) or accurate results (e.g. linkedIn URLs that actually exist). 
+
+*Due to company confidentiality agreements, I am unable to share any screenshots or specifics of the work I did.*
+
+
+### Commbank
+Software Engineering Intern, managing APIs and migrating observability systems
+
+> Jul 2024 - Jan 2025
+
+> [!IMPORTANT]
+> This work experience is very relevant for industry work! Specifically in software engineering
+
+> [!NOTE]
+> This summarises all project work I have done for this company
+
+I did a software engineering internship for 6 months at Commbank, where I was placed in a team in Home Buying managing secure APIs surrounding the bank's mortgage insurance. I started in frontend engineering, building a new management portal interface for internal staff only. I helped write tests and maintain some internal data APIs querying from MongoDB, even going so far as to deploy one for the first time to TeamCity and AWS. On top of my learnings in cloud deployments, I took responsibility to migrate the team's systems to a new observability stack (Grafana Labs + Observe + PagerDuty) as part of a company wide initiative, running demonstrates with similar teams near to mine on how they can use the new platforms. I also wrote Jira tasks, organising the team's Jira board, maintained GitHub CI/CD pipelines, and delivered a wellness presentation to my Chapter. 
+
+I learnt what it meant to take responsibility for my own tasks, adapting a growth mindset to learn new skills with different tech stacks and systems quickly, sharing my knowledge with others who do similar work, and networking and connecting with people of different cultures, especially since most of my team were based in India. 
+
+*Due to company confidentiality agreements, I am unable to share any screenshots or specifics of the work I did.*
+
+---
+
+## Thesis Projects
+
+### Crescendo
+Honours Project - Orchestra & Choir VR Immersive Experience
+
+> Sept 2025 - Aug 2026
+
+> [!IMPORTANT]
+> This work experience is very relevant for industry work! Specifically in VR development
+
+> [!NOTE]
+> This summarises all project work I have done for this thesis project
+
+<details>
+  <summary><mark>Keywords</mark></summary>
+  Virtual Reality, VR Development, Unity, Unity Engine, Meta Quest, Meta Quest 2, Meta Quest 3, Meta Quest Pro, Standalone VR, Head-Mounted Display, HMD, Immersive Technology, Classical Music, Orchestra, Choir, Spatial Computing, Immersive Experience, Virtual Concert Hall, Content Authoring, Interactive Storytelling, Scene Composition, Prefab Variant Management, Asset Bundles, Addressables, Ray Casting, Physics Raycasting, Pointer Interactor, UI Interaction, Spatial Raycasting, Gaze Interaction, Object Selection, VR Presence, Sense of Presence, Immersion, Human-Computer Interaction, HCI, Spatial Perception, Embodiment, User Agency, Comfort Settings, Locomotion, Teleportation, Motion Sickness Mitigation, Unity Timelines, Timeline Asset, Playable API, Narrative Orchestration, Cue Synchronization, Audio-Visual Sync, Cutscene Design, Event Markers, Data-Oriented Technology Stack, DOTS, Data-Oriented Programming, Entity Component System, ECS, C# Job System, Burst Compiler, High-Performance C#, Audio Spectrum Data, Fast Fourier Transform, FFT, Audio Signal Processing, Audio Analysis, Spatial Audio, HRTF, Ambisonics, 3D Sound Localization, Dynamic Audio Visualisers, Frequency Bands, Audio Reactive Visuals, Peak Detection, Mesh Rendering, Skinned Mesh Renderer, Static Mesh Batching, Shader Graph, VFX Graph, Visual Effect Graph, Particle Systems, Custom Shaders, Universal Render Pipeline, URP, Dynamic Lighting, Lightmapping, Occlusion Culling, Performance Optimisation, Frame Rate Target, 72FPS, 90FPS, Render Thread Optimisation, Draw Call Reduction, Dynamic Batching, GPU Instancing, Profiling, Unity Profiler, Frame Debugger, OVR Metrics Tool, Memory Management, GC Allocation Reduction.
+</details>
+
+For a whole year, I did my thesis on something fun and exciting, one that mixes my skills in software engineering with my passions in classical music. Crescendo aims to bring classical music performed by UNSW's ensembles (managed by the MPU) to a whole new medium, bring accessibility and immersion to more users in the UNSW community. The UNSW Media & Immersive Team organised 3 recordings from the UNSW Orchestra and Choir for exclusive use in this application, and an interesting experience involving giant floating cubes of projections of the orchestra and choir was made. The problem was, the existing project had not reached its full potential and the vision originally realised by the stakeholders, the MPU. Content authoring became extremely tedious, quick onboarding of new recordings became impossible, and smooth performance was never achieved, due to Meta Quest headsets' hardware limits and excessive use of Bloom. Only 1 recording was properly implemented. 
+
+My contribution basically transformed the old project into something completely new, then was transformed again after we realised the previous transformation didn't work and new learnings were discovered. The immersive experience is now captured on a single screen with an abstract movie-theatre environment surrounding the user, which includes an animated audience. Sound and visuals combine to emulate the concert theatre experience, with a voxel cube canopy surrounding the screen with floating cubes and intriguing colour changes. Visualiser bars raise and lower along the walls, and lights fly past the stage along the walls. Particle effects and user interactions were also added for additional immersion and interest. 4 recordings now exist, including one from another ensemble (the UNSW Wind Symphony), with the newer recordings being onboarded within a day and documented for future developers. This necessitated additional audio processing and balancing for maximum listening comfort. Finally, a month was spent on performance optimisations, which yielded a consistent 60FPS across the whole experience.
+
+This project was all about enhancing musical interest beyond the limits of audio. It aims to create engagement and immersion without hindering on musical integrity. The challenges presented by the stakeholders meant overly ambitious ideas (like conducting rhythm games and adaptive mixed-reality thematic environments) were way beyond current scope. It became more of a design than a technical project, as the cohesion of different visual elements in the scene had to be spot on. I have learnt so much about the quirks of VR development in Unity 6, the difference between web and VR builds in terms of performance and intractability, and the importance of experimentation with design: there were so many unknowns with the project, so just getting hands-on building this was the best way for us to learn what works and what doesn't. 
+
+<img width="918" height="430" alt="theatreScene5" src="https://github.com/user-attachments/assets/df4054e0-1db3-4af4-8942-ecef7e382f6e" />
+
+*img: screenshot of new scene with a person object in foreground*
+
+<img width="1388" height="646" alt="voxelCanopy3" src="https://github.com/user-attachments/assets/5ff10da9-c80d-4378-9a31-008ba1604ea2" />
+
+*img: screenshot of the screen, canopy and surrounding effects from user's perspective in VR*
+
+<img width="711" height="424" alt="Screenshot 2026-07-21 at 15 18 52" src="https://github.com/user-attachments/assets/ef02a89e-c750-42e6-a446-ef0004e66571" />
+
+*img: screenshot of UI for song selection in VR*
+
+**You can find my final thesis report located in the thesis folder**
+
+
+---
+
 ## Software Engineering
 
-### seng3011 - Software DevOps Workshop
+### seng3011
+Software DevOps Workshop
+
+> Feb - Apr 2025
 
 > [!IMPORTANT]
 > This project is very relevant for industry work! Specifically in software engineering
@@ -95,7 +202,10 @@ Web service for users to fetch articles, extract keywords from articles, visuali
 *img: screenshot of Render logs for deployed frontend*
 
 
-### seng2021 - Software Requirements and Design Workshop
+### seng2021
+Software Requirements and Design Workshop
+
+> Feb - Apr 2023
 
 > [!IMPORTANT]
 > This project is very relevant for industry work! Specifically in software engineering
@@ -137,7 +247,10 @@ Web service for users to create, manage and send invoices to other users easily 
 
 ## Artificial Intelligence and Data Analytics
 
-### fins3645 - Crypto Market Data Design and Analysis
+### fins3645
+Crypto Market Data Design and Analysis
+
+> Jun - Aug 2025
 
 > [!IMPORTANT]
 > This project is very relevant for industry work! Specifically in data analytics and AI (ML, NLP)
@@ -170,7 +283,10 @@ Uniquely, this was the only course I've done which encourages use of generative 
 *img: screenshot of frontend Dashboard page showcasing all the data visualisastions*
 
 
-### comp9517 — Computer Vision Workshop
+### comp9517
+Computer Vision Workshop
+
+> Sept - Nov 2025
 
 > [!IMPORTANT]
 > This project is very relevant for industry work! Specifically in AI (computer vision)
@@ -201,7 +317,10 @@ I learnt what it means to have a "good" model that can classify and detect vario
 *img: powerpoint slide summarising the key results of the YOLO model, specifically noise and resolution augumentation results*
 
 
-### comp9321 - Data Services Engineering
+### comp9321
+Data Services Engineering
+
+> Feb - Apr 2024
 
 <details>
   <summary><mark>Keywords</mark></summary>
@@ -222,6 +341,9 @@ This machine learning assignment does 2 things:
 *img: code screenshot of testing different models for regression*
 
 #### ass2 - RESTful API
+
+> [!IMPORTANT]
+> This project is very relevant for industry work! Specifically in software engineering
 
 > [!NOTE]
 > This project is one of my most favourite assignments I've ever done!
@@ -259,7 +381,10 @@ Extracts data from a csv file, stores such info in python dataframes, cleans and
 *img: visualisation of data summary after data cleansing and manipulation*
 
 
-### YarnLink - Indigenous Mental Health Chatbot
+### YarnLink
+Indigenous Mental Health Chatbot for Rural Australia
+
+> Aug - Sept 2025
 
 > [!IMPORTANT]
 > This project was featured in a Society Competition Showcase!
@@ -286,7 +411,10 @@ Quite impressively, the entire application, both the API and the website, was pu
 *img: sample response displayed in the website from the backend API*
 
 
-### comp3411 - Artificial Intelligence
+### comp3411
+Artificial Intelligence Fundamentals
+
+> Feb - Apr 2024
 
 #### ass2 - Search Algorithms Report
 Report which analyses different search algorithms, including heuristic path search evaluation and alpha-beta pruning for 2-player game simulation.
@@ -318,7 +446,11 @@ Different characters correspond to a different number of bridges between island 
 
 ## Database Systems and Computer Networks
 
-### comp3331 - Computer Networks and Applications
+### comp3331
+Computer Networks and Applications
+
+> Feb - Apr 2025
+
 This networks assignment involved the creation of **_SockForums_ 🧦**, an online forum application that operates in the terminal environment and communicates between client and server using UDP and TCP protocols.
 
 Users register/login with a username and password stored in a credentials.txt file in the server (yes, this isn't very secure, but it had to be implemented according to assignment specification). Threads are created and stored in individual files in the server containing messages and file upload notifications. Users can create, list and delete threads, and create, read, edit and delete messages, plus they can request to upload a file to a thread or download a file from a thread. Finally, the user can logout safely. 
@@ -330,7 +462,10 @@ UDP was used for all command interactions, while TCP was reserved specifically f
 *img: screenshot of terminal with 1 server and 2 clients over UDP connection, clients simultaneously login with same username, only 1 is accepted*
 
 
-### fins3646 - Toolkit for Finance
+### fins3646
+Toolkit for Finance
+
+> Feb - Apr 2024
 
 #### project2 - Event Study
 
@@ -340,7 +475,10 @@ UDP was used for all command interactions, while TCP was reserved specifically f
 A project that performed some introductory data manipulation using pandas, before using the data to analyse whether total volatility has any effect on a long-short portfolio consisting of top-performing NYSE stocks. The event study was deliberately made unclear for us to figure out the null hypothesis for ourselves. 
 
 
-### comp3311 - Database Systems
+### comp3311
+Database Systems
+
+> Feb - Apr 2023
 
 #### ass2 - Pokemon Database
 An assignment which uses both Python and SQL to store pokemon data, and uses this data to calculate attack values in a simulated pokemon duel.
@@ -354,7 +492,10 @@ An assignment which uses SQL to store and manage data about different kinds of b
 
 ## Advanced Programming and Design
 
-### comp6080 – Web Frontend Programming
+### comp6080
+Web Frontend Programming
+
+> Feb - Apr 2026
 
 This course taught some fundamentals of web programming and UX design, usability, accessibility, testing and deployment. It progressed through fundamentals of web programming (HTML, CSS, Node.js) before moving into React + Vite architecutres, routing, component rendering and tailwind.css in-class styling. 
 
@@ -388,7 +529,7 @@ The requirements were strict in some layout components, but freedom was given fo
 
 #### qanda – Q&A forum application
 
-This project involved the creation of **_qanda_**, a tech-themed Q&A forum application. Users can create accounts, forum threads and messages within threads. Messages are nested based on replies to other messages. They can view theirs and others' profiles and admin privileges if they are an admin.
+This assignment involved the creation of **_qanda_**, a tech-themed Q&A forum application. Users can create accounts, forum threads and messages within threads. Messages are nested based on replies to other messages. They can view theirs and others' profiles and admin privileges if they are an admin.
 
 The challege here was to go back to fundamentals of web frontend programming and only use HTML, CSS and Node.js, with only some styling libraries like tailwind allowed. This means for such a single page application, the routing and state management had to be done manually. On top of this, a few challenging components in the specification were completed: Polling and infinite scroll allow threads and messages to be loaded progressively and updated live without requiring a refresh, while static feed offline access allows the most recent thread to be cached and retrieved when internet is down.
 
@@ -411,9 +552,42 @@ This was a tutorial exercise where we would get familiar with Node.js and React.
 *img: screenshot of the main page for the 2048 application*
 
 
-### comp6771 - Advanced C++
+### comp6991
+Solving Modern Programming Problems with Rust
+
+> Jun - Aug 2026
+
+This course taught advanced Rust principles like ownership and borrowing, modularity, traits/generics, macros, closures, lifetimes, concurrency and unsafe Rust. 
+
+<details>
+  <summary><mark>Keywords</mark></summary>
+  Rust Programming Language, Systems Programming, Memory Safety, Ownership, Borrowing, Borrow Checker, Move Semantics, Copy vs Clone, Resource Acquisition Is Initialization, RAII, Smart Pointers, Box, Rc, Arc, RefCell, Cell, Modularity, Modules, Crate, Cargo, Workspace, Visibility, Public vs Private, Trait System, Traits, Associated Types, Supertraits, Monomorphization, Generics, Generic Constraints, Dynamic Dispatch, Trait Objects, vtable, Declarative Macros, macro_rules!, Procedural Macros, Derive Macros, Attribute Macros, Function-like Macros, TokenStream, Syn, Quote, Closures, Fn, FnMut, FnOnce, Higher-Rank Trait Bounds, HRTB, Environments and Capturing, Lifetimes, Lifetime Annotations, Lifetime Elision, Static Lifetime, Anonymous Lifetimes, Covariance, Contravariance, Invariance, Concurrency, Multithreading, Threads, Mutex, RwLock, Channels, mpsc, Message Passing, Shared State Concurrency, Send and Sync Traits, Atomics, Memory Barriers, Async/Await, Futures, Tokio, Executor, Unsafe Rust, Unsafe Blocks, Dereferencing Raw Pointers, NonNull, FFI, Foreign Function Interface, Undefined Behavior, UB, Pinning, PhantomData, Memory Layout, Data Alignment, Type System, Zero-Cost Abstractions.
+</details>
+
+#### plaza - Reddit r/place using Rust Concurrency
+
+An assignment to implement the Reddit April Fools social event known as "r/place" but in a terminal environment. Users place a pixel on a large grid but have to wait some time before placing another one. The service had to allow multiple users to use the system, handling simultaneous actions and slow connections. The focus of this assignment was on Rust concurrency (scope threading, arc/mutex and send/sync trait channels), traits/generics, closures and macros without using any form of unsafe Rust.
+
+#### ortalab - Balatro card/deck scorer system
+
+An assignment to implement a Balatro scoring backend. Cards and jokers are added to the system and the system calculates the total score of the cards with the effects of Balatro jokers applied. As part of a bonus feature, I build a basic frontend and connected that to this backend to demonstrate API development in Rust and integration for Fullstack applications (which also required some threading). The focus of this assignment was on Rust ownership rules, lifetimes, modularity and testing. 
+
+<img width="1463" height="846" alt="Screenshot 2026-07-13 at 20 20 15" src="https://github.com/user-attachments/assets/97fdd430-6f52-474f-baca-34647641f08a" />
+
+*img: screenshot of the main page for the Balatro scorer frontend*
+
+
+### comp6771
+Advanced C++
+
+> Jun - Aug 2025
 
 This course taught advanced c++ practices like operator overloading, iterators, dynamic polymorphism, memory management, templates and metaprogramming.
+
+<details>
+  <summary><mark>Keywords</mark></summary>
+  C++ Language, C++, Systems Programming, Operator Overloading, Binary Operators, Unary Operators, Copy Assignment Operator, Move Assignment Operator, Subscript Operator, Function Call Operator, Spaceship Operator, Three-Way Comparison, Friendship and Operators, Standard Template Library, STL, Iterators, Input Iterators, Output Iterators, Forward Iterators, Bidirectional Iterators, Random Access Iterators, Contiguous Iterators, Custom Iterators, Iterator Categories, std::iterator_traits, Ranges, std::ranges, Sentinels, Dynamic Polymorphism, Inheritance, Virtual Functions, Pure Virtual Functions, Abstract Base Classes, Virtual Method Table, vtable, Virtual Pointer, vptr, Dynamic Casting, dynamic_cast, RTTI, Runtime Type Information, Object-Oriented Programming, OOP, Override Specifier, Final Specifier, Object Layout, Memory Management, Resource Acquisition Is Initialization, RAII, Stack Allocation, Heap Allocation, Dynamic Memory, Raw Pointers, Smart Pointers, std::unique_ptr, std::shared_ptr, std::weak_ptr, Custom Deleters, Placement New, Custom Memory Allocators, Memory Leaks, Dangling Pointers, Double Free, AddressSanitizer, ASan, Move Semantics, Rvalue References, std::move, std::forward, Perfect Forwarding, Rule of Three, Rule of Five, Rule of Zero, Templates, Function Templates, Class Templates, Variable Templates, Template Specialization, Partial Specialization, Template Argument Deduction, Concepts and Constraints, std::enable_if, SFINAE, Substitution Failure Is Not An Error, Template Metaprogramming, TMP, Compile-Time Evaluation, constexpr, consteval, constinit, Type Traits, std::is_same, Variadic Templates, Parameter Packs, Fold Expressions, Expression Templates, Policy-Based Design, Curiously Recurring Template Pattern, CRTP, Static Polymorphism, Zero-Overhead Abstractions.
+</details>
 
 #### ass3 - General Directed Weighted Graph
 
@@ -428,7 +602,10 @@ An assignment to implement a filtered string view class from scratch. This class
 This assignment focuses on the use of exception handling, operator overloading and iterator management for static yet robust programming.
 
 
-### seng2011 - Formal Verification workshop
+### seng2011
+Formal Verification workshop
+
+> Sept - Nov 2022
 
 This course was a formal verification course, which used mathematical predicates and Dafny to prove the validity of all internal statements within an algorithm or function (white-box testing). 
 
@@ -439,7 +616,10 @@ One of the assignments involved applying the Dutch Flag Sort algorithm to effici
 *img: code screenshot of formal verification for DNA sorting algorithm*
 
 
-### comp2511 - Object-Oriented Design and Programming
+### comp2511
+Object-Oriented Design and Programming
+
+> Sept - Nov 2023
 
 #### assignment-ii - Dungeon-crawler game
 
@@ -456,7 +636,10 @@ Improves upon the current dungeon-crawler game by implementing new features. My 
 Simulates the orbit of satellites around Jupiter using basic object-oriented programming techniques in Java. The focus of this assignment was on streams and debugging in Java. 
 
 
-### comp2521 - Data Structures and Algorithms
+### comp2521
+Data Structures and Algorithms
+
+> Sept - Nov 2022
 
 #### ass2 - Pagerank
 An assignment which uses graph algorithms such as Dijkstra path find, and advanced mathematical formulas, to calculate the pagerank value for web pages, to assist in recommendation of pages to a user in a search engine. 
